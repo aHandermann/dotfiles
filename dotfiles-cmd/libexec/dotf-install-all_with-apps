@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Usage: dotf install-all
+# Summary: Installs all defaults configurations plus Brew Cask apps
+# Help: Equivalent to run the following commands (in the same order:
+# dotf-homebrew, dotf-fonts, dotf-osx-defaults, dotf-zshell dotf-commands dotf-config-files
+
+echo 'This command will install all configuration fils in the system'
+echo 'Some commands may need some user input, so please follow the instructions on screen'
+echo
+
+"$_DOTF_ROOT"/libexec/dotf-homebrew --upgrade
+echo
+
+"$_DOTF_ROOT"/libexec/dotf-fonts
+echo
+
+"$_DOTF_ROOT"/libexec/dotf-osx-defaults
+echo
+
+"$_DOTF_ROOT"/libexec/dotf-zshell
+echo
+
+"$_DOTF_ROOT"/libexec/dotf-commands
+echo
+
+"$_DOTF_ROOT"/libexec/dotf-config-files
+echo
+
+"$_DOTF_ROOT"/libexec/dotf-homebrew-apps
+echo
