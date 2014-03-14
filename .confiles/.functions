@@ -3,11 +3,11 @@
 # Update Packages
 # -------------------------------------------------------------------
 fuction update() {
-	echo "updating homebrew..."
+	echo "updating homebrew to the latest version..."
 	brew update
-	echo "updating homebrew packages..."
+	echo "upgrading already-installed formulas..."
 	brew upgrade
-	echo "cleaning up..."
+	echo "cleaning up outdated versions from the cellar..."
 	brew cleanup
 	echo "checking with the Dr..."
 	brew doctor

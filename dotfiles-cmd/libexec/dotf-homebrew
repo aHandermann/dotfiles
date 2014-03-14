@@ -2,7 +2,7 @@
 
 # Usage: dotf homebrew
 # Summary: Installs homebrew and some brew packages by default
-# Help: This will install homebrew and the packages defined in the 
+# Help: This will install homebrew and the packages defined in the
 # file config/brew
 
 # install brew if it does not exists
@@ -40,7 +40,6 @@ end
 puts "Updating homebrew to make sure we’re using the latest version"
 system('brew update')
 
-
 puts "Installing GNU core utilities (those that come with OS X are outdated)"
 system('brew install coreutils')
 
@@ -66,13 +65,34 @@ system('brew install imagemagick')
 puts "Installing node"
 system('brew install node')
 
+puts "Install ssh-copy-id"
+system('brew install ssh-copy-id')
+
+puts "Installing unzip"
+system('brew install unzip')
+
+puts "Install vim"
+system('brew install vim')
+
+puts "Installing tidy"
+sytem('brew install tidy')
+
+puts "Install brew-casks"
+system('brew install brew-cask')
+
+puts "Install Legit"
+system('brew install legit')
+
+puts "Activate Legit"
+system('legit install')
+
 puts "Removing outdated versions from the cellar"
 system('brew cleanup')
 
 if (doUpgrade)
     puts "Upgrading already-installed formulae"
     system('brew upgrade')
-end 
+end
 
 puts "Done"
 puts "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."

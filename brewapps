@@ -1,0 +1,55 @@
+#!/bin/bash
+
+sudo -v # ask for password only at the beginning
+
+brew update
+brew upgrade
+brew tap homebrew/versions
+brew tap phinze/homebrew-cask
+
+brew install brew-cask
+brew install node
+brew install git
+brew install unzip
+brew install wget
+brew install vim
+brew install tidy
+brew install macvim
+
+brew install legit
+legit install
+
+brew install ssh-copy-id
+
+# brew cask apps
+brew cask install dropbox
+brew cask install google-chrome
+brew cask install sublime-text
+brew cask install transmit
+brew cask install alfred
+brew cask alfred link
+brew cask install dash
+brew cask install vagrant
+brew cask install typinator
+brew cask install iterm2
+brew cask install divvy
+brew cask install bartender
+brew cask install mou
+brew cask install onepassword
+brew cask install sequel-pro
+brew cask install growlnotify
+brew cask install adobe-creative-cloud
+brew cask install macpaw-gemini
+brew cask install cleanmymac
+brew cask install keka
+brew cask install openoffice
+brew cask install spotify
+brew cask install vlc
+brew cask install firefox
+brew cask install cloud
+brew cask install github
+brew cask install mindnode-pro
+brew cask install fantastical
+brew cask install ripit
+brew cask install quickcast
+brew cleanup
