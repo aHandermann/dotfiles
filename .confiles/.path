@@ -1,7 +1,9 @@
 # default path
-PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+PATH=/usr/local/sbin:usr/local/lib:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
-# node 
+
+
+# node
 PATH=$PATH:$(npm config get prefix)/bin
 
 # brew
@@ -13,5 +15,7 @@ PATH=$HOME/bin:$PATH
 # If there is bin folder in the current location, it takes preference
 # Usefull for binstubs in rails
 PATH=./bin:$PATH
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 export PATH

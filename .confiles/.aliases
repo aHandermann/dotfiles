@@ -1,53 +1,122 @@
+# -------------------------------------------------------------------
+# MY STUFF
+# -------------------------------------------------------------------
+export EDITOR='subl -w' # EDIT WITH SUBLIME TEXT
+
+alias cl='clear'
+alias cll='clear && l'
+alias del="rm -Rf"
+alias dropbox="cd ~/Dropbox\ \(Rainy\ Day\ Media\)"
+
+alias cuts="subl ~/Projects/Repos/shell/dotfiles/zsh/aliases.zsh"
+alias funs="subl ~/Projects/Repos/shell/dotfiles/zsh/functions.zsh"
+alias profile="subl ~/.zshrc"
+
+alias editssh='subl .ssh/known_hosts' # EDIT SSH HOSTS
+alias copyssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"' # COPY SSH PUBLIC KEY
+
+
+# FORKED REPOS
+alias repos="~/Projects/Repos && l"
+alias projects="cd ~/Projects && l"
+
+alias samples="~/Projects/_samples && l"
+
+# RDM BUILDs
+alias myz="cd ~/Projects/Repos/shell/omz/oh-my-zsh-rdm-theme && l" # OPEN REPO
+alias mydf="cd ~/Projects/Repos/shell/dotfiles && l" # OPEN REPO
+
+# VENTRUES
+alias ventures="~/Projects/Ventures && l"
+alias cfd="~/Projects/Ventures/CodeForDayton && l"
+
+# CLIENTS
+alias archives="~/Projects/Archives && l"
+alias cb="~/Projects/clientBuilds && l"
+
+# -------------------------------------------------------------------
+# HomeBrew aliases
+# -------------------------------------------------------------------
+
+alias brews='brew list -1'
+
+# -------------------------------------------------------------------
+# Git aliases
+# -------------------------------------------------------------------
+
+alias ga='git add -A'
+alias gp='git push'
+alias gl='git log'
+alias gs='git status'
+alias gd='git diff'
+alias gm='git commit -m'
+alias gma='git commit -am'
+alias gb='git branch'
+alias gc='git checkout'
+alias gcb='git checkout -b'
+alias gra='git remote add'
+alias grr='git remote rm'
+alias gpl='git pull'
+alias gcl='git clone'
+alias gta='git tag  -m'
+alias gf='git reflog'
+alias gv='git log --pretty=format:'%s' | cut -d " " -f 1 | sort | uniq -c | sort -nr'
+
+# leverage an alias from the ~/.gitconfig
+alias gh='git hist'
+alias gt='git today'
+alias glg1='git lg1'
+alias glg2='git lg2'
+alias glg='git lg'
+
+ git config --global alias.logs "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+# curiosities
+# gsh shows the number of commits for the current repos for all developers
+alias gsh="git shortlog | grep -E '^[ ]+\w+' | wc -l"
+
+# gu shows a list of all developers and the number of commits they've made
+alias gu="git shortlog | grep -E '^[^ ]'"
+
+# -------------------------------------------------------------------
+# Capistrano aliases
+# -------------------------------------------------------------------
+alias capd='cap deploy'
+
+# -------------------------------------------------------------------
 # Postgre SQL
+# -------------------------------------------------------------------
 alias pgon='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pgoff='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
+# -------------------------------------------------------------------
 # MySQL aliases
+# -------------------------------------------------------------------
 alias myon='sudo /Library/StartupItems/MySQLCOM/MySQLCOM start'
 alias myoff='sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop'
 alias myrestart='sudo /Library/StartupItems/MySQLCOM/MySQLCOM restart'
 
-# apache aliases
-alias apron='apachectl -k start'
-alias aproff='apachectl -k stop'
-alias apres='apachectl -k restart'
+# -------------------------------------------------------------------
+# Apache aliases
+# -------------------------------------------------------------------
+alias serverstart='apachectl -k start'
+alias serveroff='apachectl -k stop'
+alias reboot='apachectl -k restart'
 
-# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update'
 
-# IP addresses
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en1"
-alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
+# -------------------------------------------------------------------
+# Network Stuff
+# -------------------------------------------------------------------
+alias whois="whois -h whois-servers.net" # Enhanced WHOIS looku ps
 
-# Enhanced WHOIS lookups
-alias whois="whois -h whois-servers.net"
+alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder" # Flush Directory Service cache
 
-# Flush Directory Service cache
-alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+# -------------------------------------------------------------------
+# OSX
+# -------------------------------------------------------------------
 
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
-
-# View HTTP traffic
-alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
-alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
-# One of @janmoesen’s ProTip™s
-for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
-  alias "$method"="lwp-request -m '$method'"
-done
-
-# # Canonical hex dump; some systems have this symlinked
-# command -v hd > /dev/null || alias hd="hexdump -C"
-
-# # OS X has no `md5sum`, so use `md5` as a fallback
-# command -v md5sum > /dev/null || alias md5sum="md5"
-
-# # OS X has no `sha1sum`, so use `shasum` as a fallback
-# command -v sha1sum > /dev/null || alias sha1sum="shasum"
-
-# # ROT13-encode text. Works for decoding, too! ;)
-# alias rot13='tr a-zA-Z n-za-mN-ZA-M'
 
 # # Show/hide hidden files in Finder
 alias fshow="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -61,14 +130,31 @@ alias fshowdesktop="defaults write com.apple.finder CreateDesktop -bool true && 
 # Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
 alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
 
+# One of @janmoesen’s ProTip™s
+for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
+  alias "$method"="lwp-request -m '$method'"
+done
+
+# Ring the terminal bell, and put a badge on Terminal.app’s Dock icon
+# (useful when executing time-consuming commands)
+#alias badge="tput bel"
+
+# # PlistBuddy alias, because sometimes `defaults` just doesn’t cut it
+#alias plistbuddy="/usr/libexec/PlistBuddy"
+
+# # Canonical hex dump; some systems have this symlinked
+# command -v hd > /dev/null || alias hd="hexdump -C"
+
+# # OS X has no `md5sum`, so use `md5` as a fallback
+# command -v md5sum > /dev/null || alias md5sum="md5"
+
+# # OS X has no `sha1sum`, so use `shasum` as a fallback
+# command -v sha1sum > /dev/null || alias sha1sum="shasum"
+
+# # ROT13-encode text. Works for decoding, too! ;)
+# alias rot13='tr a-zA-Z n-za-mN-ZA-M'
+
 # Disable Spotlight
 # alias spotoff="sudo mdutil -a -i off"
 # Enable Spotlight
 # alias spoton="sudo mdutil -a -i on"
-
-# PlistBuddy alias, because sometimes `defaults` just doesn’t cut it
-alias plistbuddy="/usr/libexec/PlistBuddy"
-
-# Ring the terminal bell, and put a badge on Terminal.app’s Dock icon
-# (useful when executing time-consuming commands)
-alias badge="tput bel"

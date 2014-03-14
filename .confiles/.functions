@@ -1,4 +1,25 @@
+
+# -------------------------------------------------------------------
+# Update Packages
+# -------------------------------------------------------------------
+fuction update() {
+	echo "updating homebrew..."
+	brew update
+	echo "updating homebrew packages..."
+	brew upgrade
+	echo "cleaning up..."
+	brew cleanup
+	echo "checking with the Dr..."
+	brew doctor
+	echo "updating RVM..."
+	rvm get stable
+	echo "Nowcleaning RVM..."
+	rvm cleanup all
+}
+
+# -------------------------------------------------------------------
 # Simple calculator
+# -------------------------------------------------------------------
 function calc() {
 	local result=""
 	result="$(printf "scale=10;$*\n" | bc --mathlib | tr -d '\\\n')"
@@ -16,12 +37,17 @@ function calc() {
 	printf "\n"
 }
 
+# -------------------------------------------------------------------
 # Create a new directory and enter it
+# -------------------------------------------------------------------
 function mkd() {
 	mkdir -p "$@" && cd "$@"
 }
 
+# -------------------------------------------------------------------
 # Determine size of a file or total size of a directory
+# -------------------------------------------------------------------
+
 function fs() {
 	if du -b /dev/null > /dev/null 2>&1; then
 		local arg=-sbh
@@ -35,7 +61,127 @@ function fs() {
 	fi
 }
 
+# -------------------------------------------------------------------
+# compressed file expander
+# (from https://github.com/myfreeweb/zshuery/blob/master/zshuery.sh)
+# -------------------------------------------------------------------
+ex() {
+    if [[ -f $1 ]]; then
+        case $1 in
+          *.tar.bz2) tar xvjf $1;;
+          *.tar.gz) tar xvzf $1;;
+          *.tar.xz) tar xvJf $1;;
+          *.tar.lzma) tar --lzma xvf $1;;
+          *.bz2) bunzip $1;;
+          *.rar) unrar $1;;
+          *.gz) gunzip $1;;
+          *.tar) tar xvf $1;;
+          *.tbz2) tar xvjf $1;;
+          *.tgz) tar xvzf $1;;
+          *.zip) unzip $1;;
+          *.Z) uncompress $1;;
+          *.7z) 7z x $1;;
+          *.dmg) hdiutul mount $1;; # mount OS X disk images
+          *) echo "'$1' cannot be extracted via >ex<";;
+    esac
+    else
+        echo "'$1' is not a valid file"
+    fi
+}
+
+# -------------------------------------------------------------------
+# any function from http://onethingwell.org/post/14669173541/any
+# search for running processes
+# -------------------------------------------------------------------
+any() {
+    emulate -L zsh
+    unsetopt KSH_ARRAYS
+    if [[ -z "$1" ]] ; then
+        echo "any - grep for process(es) by keyword" >&2
+        echo "Usage: any " >&2 ; return 1
+    else
+        ps xauwww | grep -i --color=auto "[${1[1]}]${1[2,-1]}"
+    fi
+}
+
+# -------------------------------------------------------------------
+# display a neatly formatted path
+# -------------------------------------------------------------------
+path() {
+  echo $PATH | tr ":" "\n" | \
+    awk "{ sub(\"/usr\",   \"$fg_no_bold[green]/usr$reset_color\"); \
+           sub(\"/bin\",   \"$fg_no_bold[blue]/bin$reset_color\"); \
+           sub(\"/opt\",   \"$fg_no_bold[cyan]/opt$reset_color\"); \
+           sub(\"/sbin\",  \"$fg_no_bold[magenta]/sbin$reset_color\"); \
+           sub(\"/local\", \"$fg_no_bold[yellow]/local$reset_color\"); \
+           print }"
+}
+# -------------------------------------------------------------------
+# Mac specific functions
+# -------------------------------------------------------------------
+if [[ $IS_MAC -eq 1 ]]; then
+
+    # view man pages in Preview
+    pman() { ps=`mktemp -t manpageXXXX`.ps ; man -t $@ > "$ps" ; open "$ps" ; }
+
+    # function to show interface IP assignments
+    ips() { foo=`/Users/mark/bin/getip.py; /Users/mark/bin/getip.py en0; /Users/mark/bin/getip.py en1`; echo $foo; }
+
+    # notify function - http://hints.macworld.com/article.php?story=20120831112030251
+    notify() { automator -D title=$1 -D subtitle=$2 -D message=$3 ~/Library/Workflows/DisplayNotification.wflow }
+fi
+
+# -------------------------------------------------------------------
+# nice mount (http://catonmat.net/blog/another-ten-one-liners-from-commandlingfu-explained)
+# displays mounted drive information in a nicely formatted manner
+# -------------------------------------------------------------------
+function nicemount() { (echo "DEVICE PATH TYPE FLAGS" && mount | awk '$2="";1') | column -t ; }
+
+# -------------------------------------------------------------------
+# myIP address
+# -------------------------------------------------------------------
+function myip() {
+  ifconfig lo0 | grep 'inet ' | sed -e 's/:/ /' | awk '{print "lo0       : " $2}'
+  ifconfig en0 | grep 'inet ' | sed -e 's/:/ /' | awk '{print "en0 (IPv4): " $2 " " $3 " " $4 " " $5 " " $6}'
+  ifconfig en0 | grep 'inet6 ' | sed -e 's/ / /' | awk '{print "en0 (IPv6): " $2 " " $3 " " $4 " " $5 " " $6}'
+  ifconfig en1 | grep 'inet ' | sed -e 's/:/ /' | awk '{print "en1 (IPv4): " $2 " " $3 " " $4 " " $5 " " $6}'
+  ifconfig en1 | grep 'inet6 ' | sed -e 's/ / /' | awk '{print "en1 (IPv6): " $2 " " $3 " " $4 " " $5 " " $6}'
+}
+
+# -------------------------------------------------------------------
+# (s)ave or (i)nsert a directory.
+# -------------------------------------------------------------------
+s() { pwd > ~/.save_dir ; }
+i() { cd "$(cat ~/.save_dir)" ; }
+
+# -------------------------------------------------------------------
+# console function
+# -------------------------------------------------------------------
+function console () {
+  if [[ $# > 0 ]]; then
+    query=$(echo "$*"|tr -s ' ' '|')
+    tail -f /var/log/system.log|grep -i --color=auto -E "$query"
+  else
+    tail -f /var/log/system.log
+  fi
+}
+
+# -------------------------------------------------------------------
+# shell function to define words
+# http://vikros.tumblr.com/post/23750050330/cute-little-function-time
+# -------------------------------------------------------------------
+givedef() {
+  if [[ $# -ge 2 ]] then
+    echo "givedef: too many arguments" >&2
+    return 1
+  else
+    curl "dict://dict.org/d:$1"
+  fi
+}
+
+# -------------------------------------------------------------------
 # Use Git’s colored diff when available
+# -------------------------------------------------------------------
 hash git &>/dev/null
 if [ $? -eq 0 ]; then
 	function diff() {
@@ -43,7 +189,9 @@ if [ $? -eq 0 ]; then
 	}
 fi
 
+# -------------------------------------------------------------------
 # Create a data URL from a file
+# -------------------------------------------------------------------
 function dataurl() {
 	local mimeType=$(file -b --mime-type "$1")
 	if [[ $mimeType == text/* ]]; then
@@ -51,8 +199,9 @@ function dataurl() {
 	fi
 	echo "data:${mimeType};base64,$(openssl base64 -in "$1" | tr -d '\n')"
 }
-
+# -------------------------------------------------------------------
 # Start an HTTP server from a directory, optionally specifying the port
+# -------------------------------------------------------------------
 function server() {
 	local port="${1:-8000}"
 	sleep 1 && open "http://localhost:${port}/" &
@@ -60,9 +209,10 @@ function server() {
 	# And serve everything as UTF-8 (although not technically correct, this doesn’t break anything for binary files)
 	python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
 }
-
+# -------------------------------------------------------------------
 # Start a PHP server from a directory, optionally specifying the port
 # (Requires PHP 5.4.0+.)
+# -------------------------------------------------------------------
 function phpserver() {
 	local port="${1:-4000}"
 	local ip=$(ipconfig getifaddr en1)
@@ -70,7 +220,9 @@ function phpserver() {
 	php -S "${ip}:${port}"
 }
 
+# -------------------------------------------------------------------
 # Compare original and gzipped file size
+# -------------------------------------------------------------------
 function gz() {
 	local origsize=$(wc -c < "$1")
 	local gzipsize=$(gzip -c "$1" | wc -c)
@@ -79,14 +231,18 @@ function gz() {
 	printf "gzip: %d bytes (%2.2f%%)\n" "$gzipsize" "$ratio"
 }
 
+# -------------------------------------------------------------------
 # Test if HTTP compression (RFC 2616 + SDCH) is enabled for a given URL.
 # Send a fake UA string for sites that sniff it instead of using the Accept-Encoding header. (Looking at you, ajax.googleapis.com!)
+# -------------------------------------------------------------------
 function httpcompression() {
 	encoding="$(curl -LIs -H 'User-Agent: Mozilla/5 Gecko' -H 'Accept-Encoding: gzip,deflate,compress,sdch' "$1" | grep '^Content-Encoding:')" && echo "$1 is encoded using ${encoding#* }" || echo "$1 is not using any encoding"
 }
 
+# -------------------------------------------------------------------
 # Syntax-highlight JSON strings or files
 # Usage: `json '{"foo":42}'` or `echo '{"foo":42}' | json`
+# -------------------------------------------------------------------
 function json() {
 	if [ -t 0 ]; then # argument
 		python -mjson.tool <<< "$*" | pygmentize -l javascript
@@ -95,31 +251,41 @@ function json() {
 	fi
 }
 
+# -------------------------------------------------------------------
 # All the dig info
+# -------------------------------------------------------------------
 function digga() {
 	dig +nocmd "$1" any +multiline +noall +answer
 }
 
+# -------------------------------------------------------------------
 # Escape UTF-8 characters into their 3-byte format
+# -------------------------------------------------------------------
 function escape() {
 	printf "\\\x%s" $(printf "$@" | xxd -p -c1 -u)
 	echo # newline
 }
 
+# -------------------------------------------------------------------
 # Decode \x{ABCD}-style Unicode escape sequences
+# -------------------------------------------------------------------
 function unidecode() {
 	perl -e "binmode(STDOUT, ':utf8'); print \"$@\""
 	echo # newline
 }
 
+# -------------------------------------------------------------------
 # Get a character’s Unicode code point
+# -------------------------------------------------------------------
 function codepoint() {
 	perl -e "use utf8; print sprintf('U+%04X', ord(\"$@\"))"
 	echo # newline
 }
 
+# -------------------------------------------------------------------
 # Add note to Notes.app (OS X 10.8)
 # Usage: `note 'foo'` or `echo 'foo' | note`
+# -------------------------------------------------------------------
 function note() {
 	local text
 	if [ -t 0 ]; then # argument
@@ -139,8 +305,10 @@ end tell
 EOF
 }
 
+# -------------------------------------------------------------------
 # Add reminder to Reminders.app (OS X 10.8)
 # Usage: `remind 'foo'` or `echo 'foo' | remind`
+# -------------------------------------------------------------------
 function remind() {
 	local text
 	if [ -t 0 ]; then
@@ -157,7 +325,9 @@ end tell
 EOF
 }
 
+# -------------------------------------------------------------------
 # Manually remove a downloaded app or file from the quarantine
+# -------------------------------------------------------------------
 function unquarantine() {
 	for attribute in com.apple.metadata:kMDItemDownloadedDate com.apple.metadata:kMDItemWhereFroms com.apple.quarantine; do
 		xattr -r -d "$attribute" "$@"
