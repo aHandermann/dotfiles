@@ -8,8 +8,10 @@ alias cll='clear && l'
 alias del="rm -Rf"
 alias dropbox="cd ~/Dropbox\ \(Rainy\ Day\ Media\)"
 
-alias cuts="subl ~/Projects/Repos/shell/dotfiles/zsh/aliases.zsh"
-alias funs="subl ~/Projects/Repos/shell/dotfiles/zsh/functions.zsh"
+alias cuts="subl ~/Projects/Repos/shell/dotfiles/.confiles/.aliases"
+alias funs="subl ~/Projects/Repos/shell/dotfiles/.confiles/.functions"
+alias mypath=" subl ~/Projects/Repos/shell/dotfiles/.confiles/.path"
+alias expath="subl ~/Projects/Repos/shell/dotfiles/.confiles/.exports"
 alias profile="subl ~/.zshrc"
 
 alias editssh='subl .ssh/known_hosts' # EDIT SSH HOSTS

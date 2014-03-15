@@ -52,5 +52,7 @@ unset file
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-RPROMPT='$(battery_pct_prompt)'
+# RPROMPT='$(battery_pct_prompt)'
+RPROMPT%{$fg[yellow]%}rvm:%{$reset_color%}%{$FG[239]%}%{$fg[red]%}${rvm_ruby}
+
 
