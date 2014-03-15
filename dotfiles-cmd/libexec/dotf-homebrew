@@ -46,7 +46,7 @@ system('brew install coreutils')
 puts "Installing GNU 'find', 'locate', 'updatedb', and 'xargs', g-prefixed"
 system('brew install findutils')
 
-puts "Installing Bash 4"
+puts "Installing Bash 4 (osx ships with an outdated version)"
 system('brew install bash')
 
 puts "Installing wget"
@@ -55,6 +55,10 @@ system('brew install wget')
 puts "Installing more recent versions of some OS X tools"
 system('brew tap homebrew/dupes')
 system('brew install homebrew/dupes/grep')
+
+puts "Installing more recent versions of PHP"
+system('brew tap josegonzalez/php')
+system('brew install php54 --with-fpm  --with-imap  --without-apache --with-debug')
 
 puts "Installing git & git-flow"
 system('brew install git')

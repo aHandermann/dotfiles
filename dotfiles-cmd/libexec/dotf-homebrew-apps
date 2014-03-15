@@ -6,20 +6,24 @@ brew update
 brew upgrade
 brew tap homebrew/versions
 brew tap phinze/homebrew-cask
+brew tap josegonzalez/php
+brew tap homebrew/dupes
 
-brew install brew-cask
 brew install node
 brew install git
 brew install unzip
 brew install wget
 brew install vim
 brew install tidy
-brew install macvim
 
 brew install legit
 legit install
 
+brew install php54 --with-fpm  --with-imap  --without-apache --with-debug
+
 brew install ssh-copy-id
+
+brew install brew-cask
 
 # brew cask apps
 brew cask install dropbox

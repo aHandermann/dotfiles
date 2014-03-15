@@ -27,7 +27,7 @@
   log = true
 
 [core]
-  excludesfile = ~/.global_gitignore
+  excludesfile = /Users/eheltzel/.gitignore_global
   editor = subl -w
   mergeoptions = --no-ff --no-commit
 

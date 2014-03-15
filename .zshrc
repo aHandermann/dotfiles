@@ -40,7 +40,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(battery brew bundle colorize fasd gem gitfast node npm thor vagrant zeus)
+plugins=(brew bundle colorize fasd gem node npm thor vagrant zeus)
 
 # load configuration files
 for file in ~/.confiles/.*; do
@@ -53,6 +53,5 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 # RPROMPT='$(battery_pct_prompt)'
-RPROMPT%{$fg[yellow]%}rvm:%{$reset_color%}%{$FG[239]%}%{$fg[red]%}${rvm_ruby}
 
 
