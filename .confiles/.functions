@@ -2,18 +2,25 @@
 # -------------------------------------------------------------------
 # Update Packages
 # -------------------------------------------------------------------
-fuction update() {
-	echo "updating homebrew to the latest version..."
+UPDATE_HOMEBREW='..........Updating Homebrew to the latest version'
+UPGRADE_HOMEBREW='..........Upgrading already-installed Homebrew formulas'
+CLEAN_HOMEBREW='..........Cleaning up outdated versions from the Homebrew cellar'
+DR_HOMEBREW='..........Checking with the Doctor'
+UPDATE_RVM='..........Updating RVM to the latest stable'
+CLEAN_RVM='..........Cleaning up RVM'
+
+function update() {
+	echo -e "$bg[blue] $UPDATE_HOMEBREW $reset_color"
 	brew update
-	echo "upgrading already-installed formulas..."
+	echo -e "$bg[blue] $UPGRADE_HOMEBREW $reset_color"
 	brew upgrade
-	echo "cleaning up outdated versions from the cellar..."
+	echo -e "$bg[yellow] $CLEAN_HOMEBREW $reset_color"
 	brew cleanup
-	echo "checking with the Dr..."
+	echo -e "$bg[cyan] $DR_HOMEBREW $reset_color"
 	brew doctor
-	echo "updating RVM..."
+	echo -e "$bg[blue] $UPDATE_RVM $reset_color"
 	rvm get stable
-	echo "Nowcleaning RVM..."
+	echo -e "$bg[yellow] $CLEAN_RVM $reset_color"
 	rvm cleanup all
 }
 
@@ -109,11 +116,11 @@ any() {
 # -------------------------------------------------------------------
 path() {
   echo $PATH | tr ":" "\n" | \
-    awk "{ sub(\"/usr\",   \"$fg_no_bold[green]/usr$reset_color\"); \
-           sub(\"/bin\",   \"$fg_no_bold[blue]/bin$reset_color\"); \
-           sub(\"/opt\",   \"$fg_no_bold[cyan]/opt$reset_color\"); \
-           sub(\"/sbin\",  \"$fg_no_bold[magenta]/sbin$reset_color\"); \
-           sub(\"/local\", \"$fg_no_bold[yellow]/local$reset_color\"); \
+    awk "{ sub(\"/usr\",   \"$fg_no_bold[green]/u); \
+           sub(\"/bin\",   \"$fg_no_bold_bold[blue]/b); \
+           sub(\"/opt\",   \"$fg_no_bold[cyan]/o); \
+           sub(\"/sbin\",  \"$print $bg[blue]]......sb\
+           sub(\"/local\", \"$fg_no_bold[yellow]/loc); \
            print }"
 }
 # -------------------------------------------------------------------
@@ -180,7 +187,7 @@ givedef() {
 }
 
 # -------------------------------------------------------------------
-# Use Git’s colored diff when available
+# Use Git’s col_boldoblue] diff when available
 # -------------------------------------------------------------------
 hash git &>/dev/null
 if [ $? -eq 0 ]; then

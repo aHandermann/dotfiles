@@ -63,7 +63,7 @@ alias gcl='git clone'
 alias gta='git tag  -m'
 alias grf='git reflog'
 alias gv='git log --pretty=format:'%s' | cut -d " " -f 1 | sort | uniq -c | sort -nr'
-alias gf='git fetch'
+alias fetch='git fetch'
 alias merge='git merge'
 
 # leverage an alias from the ~/.gitconfig
@@ -86,6 +86,17 @@ alias gu="git shortlog | grep -E '^[^ ]'"
 # Capistrano aliases
 # -------------------------------------------------------------------
 alias capd='cap deploy'
+
+# -------------------------------------------------------------------
+# Vagrant aliases
+# -------------------------------------------------------------------
+alias vup="vagrant up"
+alias vh="vagrant halt"
+alias vs="vagrant suspend"
+alias vr="vagrant resume"
+alias vrld="vagrant reload"
+alias vssh="vagrant ssh"
+alias vstat="vagrant status"
 
 # -------------------------------------------------------------------
 # Postgre SQL

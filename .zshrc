@@ -55,3 +55,4 @@ source $ZSH/oh-my-zsh.sh
 # RPROMPT='$(battery_pct_prompt)'
 
 
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
