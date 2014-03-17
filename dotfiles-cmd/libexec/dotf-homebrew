@@ -52,6 +52,9 @@ system('brew install bash')
 puts "Installing wget"
 system('brew install wget')
 
+puts "Install fasd"
+system('brew install fasd')
+
 puts "Installing more recent versions of some OS X tools"
 system('brew tap homebrew/dupes')
 system('brew install homebrew/dupes/grep')

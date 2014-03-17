@@ -1,16 +1,17 @@
 # -------------------------------------------------------------------
 # MY STUFF
 # -------------------------------------------------------------------
-export EDITOR='subl -w' # EDIT WITH SUBLIME TEXT
+alias dotf='./dotf'
 
 alias cl='clear'
 alias cll='clear && l'
 alias del="rm -Rf"
 alias dropbox="cd ~/Dropbox\ \(Rainy\ Day\ Media\)"
+alias dropboxp="cd ~/Dropbox\ \(Personal\)"
 
 alias cuts="subl ~/Projects/Repos/shell/dotfiles/.confiles/.aliases"
 alias funs="subl ~/Projects/Repos/shell/dotfiles/.confiles/.functions"
-alias mypath=" subl ~/Projects/Repos/shell/dotfiles/.confiles/.path"
+alias mypath="subl ~/Projects/Repos/shell/dotfiles/.confiles/.path"
 alias expath="subl ~/Projects/Repos/shell/dotfiles/.confiles/.exports"
 alias profile="subl ~/.zshrc"
 
@@ -35,6 +36,8 @@ alias cfd="~/Projects/Ventures/CodeForDayton && l"
 # CLIENTS
 alias archives="~/Projects/Archives && l"
 alias cb="~/Projects/clientBuilds && l"
+
+export EDITOR='subl -w' # EDIT WITH SUBLIME TEXT
 
 # -------------------------------------------------------------------
 # HomeBrew aliases
