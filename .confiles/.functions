@@ -14,13 +14,13 @@ function update() {
 	brew update
 	echo -e "$bg[blue] $UPGRADE_HOMEBREW $reset_color"
 	brew upgrade
-	echo -e "$bg[yellow] $CLEAN_HOMEBREW $reset_color"
+	echo -e "$fg_bold[yellow] $CLEAN_HOMEBREW $reset_color"
 	brew cleanup
 	echo -e "$bg[cyan] $DR_HOMEBREW $reset_color"
 	brew doctor
 	echo -e "$bg[blue] $UPDATE_RVM $reset_color"
 	rvm get stable
-	echo -e "$bg[yellow] $CLEAN_RVM $reset_color"
+	echo -e "$fg_bold[yellow] $CLEAN_RVM $reset_color"
 	rvm cleanup all
 }
 

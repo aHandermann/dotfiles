@@ -37,12 +37,12 @@ SVN_PROMPT_SYMBOL="%{$FG[170]%}∮"
 GIT_PROMPT_SYMBOL="%{$FG[162]%}±"
 GIT_PROMPT_PREFIX="%{$FG[239]%} %{$reset_color%}"
 GIT_PROMPT_SUFFIX="%{$FG[239]%} %{$reset_color%}"
-GIT_PROMPT_AHEAD="%{$FG[011]%}⬆%{$reset_color%} "
-GIT_PROMPT_BEHIND="%{$FG[011]%}⬇%{$reset_color%} "
+GIT_PROMPT_AHEAD="%{$FG[003]%}⬆%{$reset_color%} "
+GIT_PROMPT_BEHIND="%{$FG[003]%}⬇%{$reset_color%} "
 GIT_PROMPT_MERGING="%{$fg_bold[magenta]%}⚡︎%{$reset_color%}"
-GIT_PROMPT_UNTRACKED="%F{yellow}✭ "
-GIT_PROMPT_MODIFIED="%F{blue}✹ "
-GIT_PROMPT_ADDED="%{$FG[014]%}✚%{$reset_color%} "
+GIT_PROMPT_UNTRACKED="%{$FG[003]%}✭ "
+GIT_PROMPT_MODIFIED="%{$FG[014]%}▲ "
+GIT_PROMPT_ADDED="%{$FG[002]%}✚%{$reset_color%} "
 # Git prompt configuration
 GIT_PROMPT_DIRTY="%{$FG[160]%} ✘✘✘"
 GIT_PROMPT_CLEAN="%{$FG[040]%} ✔"
@@ -114,7 +114,7 @@ function current_pwd {
 }
 
 PROMPT='
-%{$FG[239]%}╭─ w%{$FG[033]%}$(current_pwd)%{$reset_color%} $(git_prompt_string)%{$reset_color%}
+%{$FG[239]%}╭─ %{$FG[033]%}$(current_pwd)%{$reset_color%} $(git_prompt_string)%{$reset_color%}
 %{$FG[239]%}╰─$(prompt_char) '
 
 RPROMPT=%{$fg[yellow]%}rvm:%{$reset_color%}%{$FG[239]%}%{$fg[red]%}${rvm_ruby}
