@@ -14,15 +14,15 @@ Based on [Ricky's dotfiles](https://github.com/rickyah/dotfiles) which is in tur
 
 ### Using Git and the dotf script
 
-You can clone the repository wherever you want, I keep mine in```bash ~/Projects/Repos/dotfiles```. The ```bash dotf``` script will copy the files to your home folder.
+You can clone the repository wherever you want, I keep mine in`~/Projects/Repos/dotfiles`. The `dotf` script will copy the files to your home folder.
 
 Go to Terminal and run ☞ `git clone https://github.com/edtv82/dotfiles` 
 
-then ```bash cd ~/YOUR_PATH/dotfiles``` and run ☞ ```bash./dotf```
+then `cd ~/YOUR_PATH/dotfiles`and run ☞ `./dotf`
 
 ### First time usage
 
-Once you run ```bash ./dotf``` you can see all the options with descriptions:
+Once you run `./dotf` you can see all the options with descriptions:
 
 ```bash
 Usage: dotf <command> [<args>]
@@ -45,25 +45,19 @@ With the `dotf <command> [<args>]` command you can control what to install.
 
 ### Install it all
 To install everything just type:
-```bash
-./dotf install-all
-```
+`./dotf install-all`
 
 ### Sensible OS X defaults
 
 When setting up a new Mac, you may want to set some sensible OS X defaults:
 
-```bash
-./dotf osx-defaults
-```
+`./dotf osx-defaults`
 
 ### Install Homebrew formulae
 
 When setting up a new Mac, you may want to install some common Homebrew formulae *(this will check to see if Homebrew is installed, if not it will install it for you.)*:
 
-```bash
-./dotf homebrew
-```
+`./dotf homebrew`
 
 ## Feedback
 
