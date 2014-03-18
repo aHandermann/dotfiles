@@ -1,11 +1,12 @@
-# Ricky’s dotfiles
-### Based on [Mathias’s dotfiles](https://github.com/rickyah/dotfiles)
+# A nice `.dotfiles` setup
+
+Based on [Ricky's dotfiles](https://github.com/rickyah/dotfiles) which is in turn is based on [Mathias’s dotfiles](https://github.com/rickyah/dotfiles). 
 
 
 ## Changes
-* Moved auto completion scripts into .completions file
-* Init folder holds scripts meant to be run once to set defaults or installing basic utilities
-* Removed some scripts I was not using
+* added [Homebrew Cask](http://caskroom.io/) -- *([GitHub repo](https://github.com/phinze/homebrew-cask))* for easy install of applications with Homebrew.
+	* Vagrant and Virtual Box for example []()
+* added the [rdm2.zsh-theme](https://github.com/edtv82/oh-my-zsh-rdm-theme)
 
 
 ## Installation

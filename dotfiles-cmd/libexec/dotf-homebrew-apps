@@ -9,6 +9,7 @@ brew tap phinze/homebrew-cask
 brew tap josegonzalez/php
 brew tap homebrew/dupes
 
+brew install brew-cask
 brew install node
 brew install git
 brew install unzip
@@ -23,17 +24,17 @@ brew install php54 --with-fpm  --with-imap  --without-apache --with-debug
 
 brew install ssh-copy-id
 
-brew install brew-cask
-
 # brew cask apps
 brew cask install dropbox
 brew cask install google-chrome
+brew cask install firefox
+brew cask install alfred
 brew cask install sublime-text
 brew cask install transmit
-brew cask install alfred
 brew cask alfred link
 brew cask install dash
 brew cask install vagrant
+brew cask install virtualbox
 brew cask install typinator
 brew cask install iterm2
 brew cask install divvy
@@ -42,6 +43,7 @@ brew cask install mou
 brew cask install onepassword
 brew cask install sequel-pro
 brew cask install growlnotify
+brew cask install sitesucker
 brew cask install adobe-creative-cloud
 brew cask install macpaw-gemini
 brew cask install cleanmymac
@@ -49,11 +51,17 @@ brew cask install keka
 brew cask install openoffice
 brew cask install spotify
 brew cask install vlc
-brew cask install firefox
+brew cask install kaleidoscope
 brew cask install cloud
 brew cask install github
 brew cask install mindnode-pro
 brew cask install fantastical
 brew cask install ripit
 brew cask install quickcast
+brew cask install codekit
+ brew cask install todoist
+ brew cask install namechanger
+
+
+echo -e "$bg_bold[yellow] ..........Clearning up $reset_color"
 brew cleanup
