@@ -93,13 +93,14 @@ alias capd='cap deploy'
 # -------------------------------------------------------------------
 # Vagrant aliases
 # -------------------------------------------------------------------
-alias vup="vagrant up"
-alias vh="vagrant halt"
-alias vs="vagrant suspend"
-alias vr="vagrant resume"
+alias vup="vagrant up"  #start server
+alias vh="vagrant halt"  #powerdown the server
+alias vs="vagrant suspend" #stop server
+alias vr="vagrant resume" #start server fro suspend
 alias vrld="vagrant reload"
 alias vssh="vagrant ssh"
 alias vstat="vagrant status"
+alias vdelete="vagrant destory" #destroy the server
 
 # -------------------------------------------------------------------
 # Postgre SQL
