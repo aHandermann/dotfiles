@@ -20,7 +20,7 @@ function update() {
 	brew doctor
 	echo -e "$fg_bold[cyan] $UPDATE_RVM $reset_color"
 	rvm get stable
-	echo -e "$fg_bold[yellow] $CLEAN_RVM $reset_color"
+	echo -e "$fg_bold[cyan] $CLEAN_RVM $reset_color"
 	rvm cleanup all
 }
 
