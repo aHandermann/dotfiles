@@ -120,7 +120,7 @@ alias vr="vagrant resume" #start server fro suspend
 alias vrld="vagrant reload"
 alias vssh="vagrant ssh"
 alias vstat="vagrant status"
-alias vdelete="vagrant destory" #destroy the server
+alias vdel="vagrant destory" #destroy the server
 
 # -------------------------------------------------------------------
 # Apache aliases
