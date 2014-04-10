@@ -10,7 +10,12 @@ DISABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+<<<<<<< HEAD
 plugins=(brew bundle colorize fasd gem node npm thor vagrant zeus)
+=======
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(battery brew bundle colorize fasd gem gitfast jira node npm pod thor vagrant zeus)
+>>>>>>> upstream/master
 
 # load configuration files
 for file in ~/.confiles/.*; do
