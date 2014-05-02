@@ -9,10 +9,10 @@ alias del="rm -Rf"
 alias dropbox="cd ~/Dropbox\ \(Rainy\ Day\ Media\)"
 alias dropboxp="cd ~/Dropbox\ \(Personal\)"
 
-alias cuts="subl ~/Projects/Repos/shell/dotfiles/.confiles/.aliases"
-alias funs="subl ~/Projects/Repos/shell/dotfiles/.confiles/.functions"
-alias mypath="subl ~/Projects/Repos/shell/dotfiles/.confiles/.path"
-alias expath="subl ~/Projects/Repos/shell/dotfiles/.confiles/.exports"
+alias cuts="subl ~/Projects/repos/shell/dotfiles/.confiles/.aliases"
+alias funs="subl ~/Projects/repos/shell/dotfiles/.confiles/.functions"
+alias mypath="subl ~/Projects/repos/shell/dotfiles/.confiles/.path"
+alias expath="subl ~/Projects/repos/shell/dotfiles/.confiles/.exports"
 alias profile="subl ~/.zshrc"
 
 alias editssh='subl .ssh/known_hosts' # EDIT SSH HOSTS
@@ -20,21 +20,23 @@ alias copyssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"'
 
 
 # FORKED REPOS
-alias repos="~/Projects/Repos && l"
+alias repos="~/Projects/repos && l"
 alias projects="cd ~/Projects && l"
 
 alias samples="~/Projects/_samples && l"
 
 # RDM BUILDs
-alias myz="cd ~/Projects/Repos/shell/omz/oh-my-zsh-rdm-theme && l" # OPEN REPO
-alias mydf="cd ~/Projects/Repos/shell/dotfiles && l" # OPEN REPO
+alias myz="cd ~/Projects/repos/shell/omz/oh-my-zsh-rdm-theme && l" # OPEN REPO
+alias mydf="cd ~/Projects/repos/shell/dotfiles && l" # OPEN REPO
 
 # VENTRUES
-alias ventures="~/Projects/Ventures && l"
-alias cfd="~/Projects/Ventures/CodeForDayton && l"
+alias ventures="~/Projects/ventures && l"
+alias c4d="~/Projects/ventures/c4d && l"
+alias themes="~/Projects/ventures/wp-themes && l"
+alias rdm="~/Projects/ventures/wp-themes/RDMFramework && l"
 
 # CLIENTS
-alias archives="~/Projects/Archives && l"
+alias archives="~/Projects/archives && l"
 alias cb="~/Projects/clientBuilds && l"
 
 export EDITOR='subl -w' # EDIT WITH SUBLIME TEXT
@@ -94,7 +96,7 @@ alias capd='cap deploy'
 # -------------------------------------------------------------------
 # Laravel aliases
 # -------------------------------------------------------------------
-# alias laravel='composer create-project laravel/laravel'
+# alias laravel='composer create-project laravel/laravel' # Not sure I need this that often -- commented out for reference
 
 # -------------------------------------------------------------------
 # Postgre SQL
@@ -128,7 +130,6 @@ alias vdel="vagrant destory" #destroy the server
 alias serverstart='apachectl -k start'
 alias serveroff='apachectl -k stop'
 alias reboot='apachectl -k restart'
-
 
 # -------------------------------------------------------------------
 # Network Stuff
