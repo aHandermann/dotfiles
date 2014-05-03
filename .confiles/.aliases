@@ -17,6 +17,7 @@ alias profile="subl ~/.zshrc"
 
 alias editssh='subl .ssh/known_hosts' # EDIT SSH HOSTS
 alias copyssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"' # COPY SSH PUBLIC KEY
+alias ping='ping -c' #PING WITH PACKET COUNT
 
 
 # FORKED REPOS
