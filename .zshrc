@@ -9,11 +9,6 @@ DISABLE_CORRECTION="true"
 
 COMPLETION_WAITING_DOTS="true"
 
-# Jump to a Project Folder
-go() { cd ~/Projects/$1; }
-    _go() { _files -W ~/Projects -/; }
-    compdef _go go
-
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(brew bundle colorize fasd gem node npm thor vagrant zeus)
