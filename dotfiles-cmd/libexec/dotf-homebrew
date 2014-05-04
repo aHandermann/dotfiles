@@ -63,6 +63,10 @@ puts "Installing more recent versions of PHP"
 system('brew tap josegonzalez/php')
 system('brew install php54 --with-fpm  --with-imap  --without-apache --with-debug')
 
+puts " Installing Thoughtbot Gitsh"
+system('brew tap thoughtbot/formulae')
+system('brew install gitsh')
+
 puts "Installing git & git-flow"
 system('brew install git')
 
