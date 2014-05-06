@@ -108,9 +108,9 @@ alias pgoff='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 # -------------------------------------------------------------------
 # MySQL aliases
 # -------------------------------------------------------------------
-alias myon='sudo /Library/StartupItems/MySQLCOM/MySQLCOM start'
-alias myoff='sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop'
-alias myrestart='sudo /Library/StartupItems/MySQLCOM/MySQLCOM restart'
+alias myon='mysql.server start'
+alias myoff='mysql.server stop'
+alias myreboot='mysql.server restart'
 
 # -------------------------------------------------------------------
 # Vagrant aliases
