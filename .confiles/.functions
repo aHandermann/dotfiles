@@ -26,7 +26,7 @@ function update() {
 	echo -e "$fg_bold[cyan] $NPM_PACKAGE_UPDATE $reset_color"
 	npm update
 	echo -e "$fg_bold[cyan] $NPM_UPDATE $reset_color"
-	npm update npm -g
+	npm update -g npm
 }
 
 # -------------------------------------------------------------------
