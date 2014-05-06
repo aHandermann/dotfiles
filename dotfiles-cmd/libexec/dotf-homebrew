@@ -89,7 +89,7 @@ puts "Installing tidy"
 sytem('brew install tidy')
 
 puts "Install brew-casks"
-system('brew install brew-cask')
+system('brew install caskroom/cask/brew-cask')
 
 puts "Install Legit"
 system('brew install legit')
