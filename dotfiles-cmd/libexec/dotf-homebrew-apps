@@ -1,67 +1,109 @@
-#!/bin/bash
+#!/usr/bin/ruby
 
-sudo -v # ask for password only at the beginning
+# Usage: dotf homebrew
+# Summary: Installs homebrew and some brew packages by default
+# Help: This will install homebrew and the packages defined in the
+# file config/brew
 
-brew update
-brew upgrade
-brew tap homebrew/versions
-brew tap phinze/homebrew-cask
-brew tap josegonzalez/php
-brew tap homebrew/dupes
+# install brew if it does not exists
+doUpgrade = (ARGV.include?('--upgrade') || ARGV.include?('-u'))
 
-brew install brew-cask
-brew install node
-brew install git
-brew install unzip
-brew install wget
-brew install vim
-brew install tidy
+app_name = "Homebrew"
+app_cmd = "brew"
+app_install_cmd = 'ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"'
+check_app_installation = `type $app_cmd &>/dev/null`.empty?
 
-brew install legit
-legit install
+puts "---------------------------------------------------------------------------------"
+puts "This script installs #{app_name} if it is not installed"
+puts "---------------------------------------------------------------------------------"
 
-brew install php54 --with-fpm  --with-imap  --without-apache --with-debug
+unless %x(command #{app_cmd} 2> /dev/null)
+  # brew not found, ask user if we should install it
+  puts "#{app_name} was not found in the system, To install it, this command needs be executed:"
+  puts app_install_cmd
 
-brew install ssh-copy-id
+  puts "Do you want me to install it? (y/n)"
 
-# brew cask apps
-brew cask install dropbox
-brew cask install google-chrome
-brew cask install firefox
-brew cask install alfred
-brew cask install sublime-text
-brew cask install transmit
-brew cask alfred link
-brew cask install dash
-brew cask install vagrant
-brew cask install virtualbox
-brew cask install typinator
-brew cask install iterm2
-brew cask install divvy
-brew cask install bartender
-brew cask install mou
-brew cask install onepassword
-brew cask install sequel-pro
-brew cask install growlnotify
-brew cask install sitesucker
-brew cask install adobe-creative-cloud
-brew cask install macpaw-gemini
-brew cask install cleanmymac
-brew cask install keka
-brew cask install openoffice
-brew cask install spotify
-brew cask install vlc
-brew cask install kaleidoscope
-brew cask install cloud
-brew cask install github
-brew cask install mindnode-pro
-brew cask install fantastical
-brew cask install ripit
-brew cask install quickcast
-brew cask install codekit
- brew cask install todoist
- brew cask install namechanger
+  if gets.chomp =~ /^[Yy]/
+    puts "Ok, installing #{app_name}"
+    system app_install_cmd
+  else
+    puts "Aborting"
+    exit 2
+  end
 
+else
+  puts "#{app_name} is already installed: version #{%x(#{app_cmd} --version)}"
 
-echo -e "$bg_bold[yellow] ..........Clearning up $reset_color"
-brew cleanup
+end
+
+# Installing Applications with Brew Cask NOTE ---> this does create symlinks
+
+puts "Installing Cloud Storage Apps"
+system('brew cask install dropbox')
+system('brew cask install copy')
+system('brew cask install google-drive')
+
+puts "Installing Browsers"
+system('brew cask install google-chrome')
+system('brew cask install google-hangouts')
+system('brew cask install firefox')
+system('brew cask install opera')
+
+puts "Installing Productivty Apps"
+system('brew cask install alfred')
+system('brew cask link alfred')
+system('brew cask install typinator')
+system('brew cask install onepassword')
+system('brew cask install dash')
+system('brew cask install fantastical')
+system('brew cask install todoist')
+system('brew cask install divvy')
+system('brew cask install growlnotify')
+system('brew cask install adobe-creative-cloud')
+system('brew cask install slack')
+
+puts "Installing Utilities"
+system('brew cask install keka')
+system('brew cask install carbon-copy-cloner')
+system('brew cask install cleanmymac')
+system('brew cask install macpaw-gemini')
+system('brew cask install colorpicker-hex')
+system('brew cask install colorpicker-antetype')
+system('brew cask install colorpicker-skalacolor')
+system('brew cask install sitesucker')
+system('brew cask install namechanger')
+system('brew cask install bartender')
+
+puts "Installing Video Utilities and Spotify"
+system('brew cask install quickcast')
+system('brew cask install spotify')
+system('brew cask install vlc')
+system('brew cask install handbrake')
+system('brew cask install handbrakebatch')
+
+puts "Installing Development Tools"
+system('brew cask install iterm2')
+system('brew cask install sublime-text')
+system('brew cask install transmit')
+system('brew cask install vagrant')
+system('brew cask install virtualbox')
+system('brew cask install codekit')
+system('brew cask install github')
+system('brew cask install mou')
+system('brew cask install sequel-pro')
+system('brew cask install kaleidoscope')
+system('brew cask install mindnode-pro')
+system('brew cask install gitifier')
+system('brew cask install mamp')
+
+puts "Removing outdated versions from the cellar"
+system('brew cleanup')
+
+if (doUpgrade)
+    puts "Upgrading already-installed formulae"
+    system('brew upgrade')
+end
+
+puts "Done"
+puts "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."

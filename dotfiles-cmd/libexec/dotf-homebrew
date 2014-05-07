@@ -37,7 +37,7 @@ else
 
 end
 
-puts "Updating homebrew to make sure we’re using the latest version"
+puts "Updating Homebrew to the latest version"
 system('brew update')
 
 puts "Installing GNU core utilities (those that come with OS X are outdated)"
@@ -59,9 +59,10 @@ puts "Installing more recent versions of some OS X tools"
 system('brew tap homebrew/dupes')
 system('brew install homebrew/dupes/grep')
 
-puts "Installing more recent versions of PHP"
+puts "Installing more recent versions of PHP and Composer"
 system('brew tap josegonzalez/php')
-system('brew install php54 --with-fpm  --with-imap  --without-apache --with-debug')
+system('brew install php55-intl')
+system('brew install josegonzalez/php/composer')
 
 puts " Installing Thoughtbot Gitsh"
 system('brew tap thoughtbot/formulae')
@@ -83,7 +84,7 @@ puts "Install vim"
 system('brew install vim')
 
 puts "Installing tidy"
-sytem('brew install tidy')
+system('brew install tidy')
 
 puts "Install brew-casks"
 system('brew install caskroom/cask/brew-cask')
