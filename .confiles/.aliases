@@ -31,8 +31,8 @@ alias myz="cd ~/Projects/repos/shell/omz/oh-my-zsh-rdm-theme && l" # OPEN REPO
 alias mydf="cd ~/Projects/repos/shell/dotfiles && l" # OPEN REPO
 alias cuts="subl ~/Projects/repos/shell/dotfiles/.confiles/.aliases"
 alias funs="subl ~/Projects/repos/shell/dotfiles/.confiles/.functions"
-alias cuts="subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew"
-alias funs="subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew-apps"
+alias confs="subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew"
+alias confapps="subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew-apps"
 
 # VENTRUES
 alias ventures="~/Projects/ventures && l"
