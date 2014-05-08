@@ -111,6 +111,10 @@ alias pgoff='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias myon='mysql.server start'
 alias myoff='mysql.server stop'
 alias myreboot='mysql.server restart'
+alias dropdb='mysqladmin -u root -p drop'
+alias createdb='mysqladmin -u root -p create'
+alias dblogin='mysql -u root -p'
+
 
 # -------------------------------------------------------------------
 # Vagrant aliases
