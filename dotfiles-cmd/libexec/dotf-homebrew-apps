@@ -97,8 +97,17 @@ system('brew cask install mindnode-pro')
 system('brew cask install gitifier')
 system('brew cask install mamp')
 
+puts "Checking with the DR"
+system('brew doctor')
+
 puts "Removing outdated versions from the cellar"
 system('brew cleanup')
+
+puts "Installing node"
+system('brew install node --without-npm')
+
+puts "Installing NPM"
+system('curl -L https://npmjs.org/install.sh | sh')
 
 if (doUpgrade)
     puts "Upgrading already-installed formulae"
