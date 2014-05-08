@@ -9,8 +9,7 @@ alias del="rm -Rf"
 alias dropbox="cd ~/Dropbox\ \(Rainy\ Day\ Media\)"
 alias dropboxp="cd ~/Dropbox\ \(Personal\)"
 
-alias cuts="subl ~/Projects/repos/shell/dotfiles/.confiles/.aliases"
-alias funs="subl ~/Projects/repos/shell/dotfiles/.confiles/.functions"
+
 alias mypath="subl ~/Projects/repos/shell/dotfiles/.confiles/.path"
 alias expath="subl ~/Projects/repos/shell/dotfiles/.confiles/.exports"
 alias profile="subl ~/.zshrc"
@@ -28,7 +27,12 @@ alias samples="~/Projects/_samples && l"
 
 # RDM BUILDs
 alias myz="cd ~/Projects/repos/shell/omz/oh-my-zsh-rdm-theme && l" # OPEN REPO
+
 alias mydf="cd ~/Projects/repos/shell/dotfiles && l" # OPEN REPO
+alias cuts="subl ~/Projects/repos/shell/dotfiles/.confiles/.aliases"
+alias funs="subl ~/Projects/repos/shell/dotfiles/.confiles/.functions"
+alias cuts="subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew"
+alias funs="subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew-apps"
 
 # VENTRUES
 alias ventures="~/Projects/ventures && l"

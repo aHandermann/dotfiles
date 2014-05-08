@@ -64,6 +64,7 @@ system('brew tap josegonzalez/php')
 system('brew install php55-intl')
 system('brew install josegonzalez/php/composer')
 system('brew install phpmyadmin')
+system('brew install dnsmasq')
 
 puts " Installing Thoughtbot Gitsh"
 system('brew tap thoughtbot/formulae')
