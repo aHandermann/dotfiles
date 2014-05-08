@@ -121,6 +121,11 @@ alias dropdb='mysqladmin -u root -p drop'
 alias createdb='mysqladmin -u root -p create'
 alias dblogin='mysql -u root -p'
 
+# -------------------------------------------------------------------
+# dnsmasq aliases
+# -------------------------------------------------------------------
+alias startdnsmasq='sudo launchctl start homebrew.mxcl.dnsmasq'
+alias stopdnsmasq='sudo launchctl stop homebrew.mxcl.dnsmasq'
 
 # -------------------------------------------------------------------
 # Vagrant aliases
