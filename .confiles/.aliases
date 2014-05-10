@@ -20,8 +20,10 @@ alias ping='ping -c' #PING WITH PACKET COUNT
 
 
 # FORKED REPOS
-alias repos="~/Projects/repos && l"
 alias projects="cd ~/Projects && l"
+alias repos="~/Projects/repos && l"
+alias sites="~/Projects/sites && l"
+
 
 alias samples="~/Projects/_samples && l"
 
