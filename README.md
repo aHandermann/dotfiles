@@ -1,9 +1,9 @@
-# A nice `.dotfiles` setup
+## A nice `.dotfiles` setup
 
 Based on [Ricky's dotfiles](https://github.com/rickyah/dotfiles) which is in turn is based on [Mathias’s dotfiles](https://github.com/rickyah/dotfiles). 
 
 
-## Changes
+### Changes
 * added [Homebrew Cask](http://caskroom.io/) -- *([GitHub repo](https://github.com/phinze/homebrew-cask))* for easy install of applications with Homebrew.
 	* Vagrant and Virtual Box for example []()
 * added the [rdm2.zsh-theme](https://github.com/edtv82/oh-my-zsh-rdm-theme)
@@ -13,7 +13,8 @@ Based on [Ricky's dotfiles](https://github.com/rickyah/dotfiles) which is in tur
 - [ ] add more mysql aliases
 - [ ] add php server aliases
 - [ ] update vagrant  
-
+- [ ] update brew cask script
+- [ ] integrate `gitsh` into workflow.
 ## Installation and Usage
 
 ### Using Git and the dotf script
