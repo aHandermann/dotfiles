@@ -39,7 +39,7 @@ alias confapps="subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-h
 # VENTRUES
 alias ventures="~/Projects/ventures && l"
 alias c4d="~/Projects/ventures/c4d && l"
-alias themes="~/Projects/ventures/wp-themes && l"
+alias wpthemes="~/Projects/ventures/rdm-themes && l"
 alias rdm="~/Projects/ventures/wp-themes/RDMFramework && l"
 
 # CLIENTS
