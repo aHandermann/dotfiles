@@ -65,6 +65,7 @@ alias gs='git status'
 alias gd='git diff'
 alias gm='git commit -m'
 alias gc='git commit'
+alias gc='git add -A && git commit'
 alias gma='git commit -am'
 alias gb='git branch -va' # List all local and remote-tracking branches
 alias gck='git checkout'
