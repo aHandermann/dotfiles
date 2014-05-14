@@ -19,13 +19,16 @@ alias copyssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"'
 alias ping='ping -c' #PING WITH PACKET COUNT
 
 
-# FORKED REPOS
+# FORKED REPOS AND OTHER PROJECTS
 alias projects="cd ~/Projects && l"
 alias repos="~/Projects/repos && l"
 alias sites="~/Projects/sites && l"
-
-
-alias samples="~/Projects/_samples && l"
+alias tests="~/Projects/tests && l"
+alias vents="~/Projects/ventures && l"
+alias c4d="~/Projects/ventures/c4d && l"
+alias wpthemes="~/Projects/ventures/rdm-themes && l"
+alias rdm="~/Projects/ventures/wp-themes/RDMFramework && l"
+alias archives="~/Projects/archives && l"
 
 # RDM BUILDs
 alias myz="cd ~/Projects/repos/shell/omz/oh-my-zsh-rdm-theme && l" # OPEN REPO
@@ -35,16 +38,6 @@ alias cuts="subl ~/Projects/repos/shell/dotfiles/.confiles/.aliases"
 alias funs="subl ~/Projects/repos/shell/dotfiles/.confiles/.functions"
 alias confs="subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew"
 alias confapps="subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew-apps"
-
-# VENTRUES
-alias ventures="~/Projects/ventures && l"
-alias c4d="~/Projects/ventures/c4d && l"
-alias wpthemes="~/Projects/ventures/rdm-themes && l"
-alias rdm="~/Projects/ventures/wp-themes/RDMFramework && l"
-
-# CLIENTS
-alias archives="~/Projects/archives && l"
-alias cb="~/Projects/clientBuilds && l"
 
 export EDITOR='subl -w' # EDIT WITH SUBLIME TEXT
 
