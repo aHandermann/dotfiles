@@ -15,6 +15,8 @@ Based on [Ricky's dotfiles](https://github.com/rickyah/dotfiles) which is in tur
 - [ ] update vagrant  
 - [ ] update brew cask script
 - [ ] integrate `gitsh` into workflow.
+- [ ] better vagrant aliases and functions for wordpress
+
 ## Installation and Usage
 
 ### Using Git and the dotf script
