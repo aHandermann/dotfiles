@@ -18,6 +18,7 @@ alias editssh='subl .ssh/known_hosts' # EDIT SSH HOSTS
 alias copyssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"' # COPY SSH PUBLIC KEY
 alias ping='ping -c' #PING WITH PACKET COUNT
 
+alias st3='cd /Users/eheltzel/Library/Application\ Support/Sublime\ Text\ 3 && subl .'
 
 # FORKED REPOS AND OTHER PROJECTS
 alias projects="cd ~/Projects && l"
