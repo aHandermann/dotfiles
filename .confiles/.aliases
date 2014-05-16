@@ -1,44 +1,44 @@
 # -------------------------------------------------------------------
 # MY STUFF
 # -------------------------------------------------------------------
-alias dotf='./dotf'
+	alias dotf='./dotf'
 
-alias cl='clear'
-alias cll='clear && l'
-alias del="rm -Rf"
-alias dropbox="cd ~/Dropbox\ \(Rainy\ Day\ Media\)"
-alias dropboxp="cd ~/Dropbox\ \(Personal\)"
+	alias cl='clear'
+	alias cll='clear && l'
+	alias del="rm -Rf"
+	alias dropbox="cd ~/Dropbox\ \(Rainy\ Day\ Media\)"
+	alias dropboxp="cd ~/Dropbox\ \(Personal\)"
 
 
-alias mypath="subl ~/Projects/repos/shell/dotfiles/.confiles/.path"
-alias expath="subl ~/Projects/repos/shell/dotfiles/.confiles/.exports"
-alias profile="subl ~/.zshrc"
+	alias mypath="subl ~/Projects/repos/shell/dotfiles/.confiles/.path"
+	alias expath="subl ~/Projects/repos/shell/dotfiles/.confiles/.exports"
+	alias profile="subl ~/.zshrc"
 
-alias editssh='subl .ssh/known_hosts' # EDIT SSH HOSTS
-alias copyssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"' # COPY SSH PUBLIC KEY
-alias ping='ping -c' #PING WITH PACKET COUNT
+	alias editssh='subl .ssh/known_hosts' # EDIT SSH HOSTS
+	alias copyssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"' # COPY SSH PUBLIC KEY
+	alias ping='ping -c' #PING WITH PACKET COUNT
 
-alias st3='cd /Users/eheltzel/Library/Application\ Support/Sublime\ Text\ 3 && subl .'
+	alias st3='cd /Users/eheltzel/Library/Application\ Support/Sublime\ Text\ 3 && subl .'
 
 # FORKED REPOS AND OTHER PROJECTS
-alias projects="cd ~/Projects && l"
-alias repos="~/Projects/repos && l"
-alias sites="~/Projects/sites && l"
-alias tests="~/Projects/tests && l"
-alias vents="~/Projects/ventures && l"
-alias c4d="~/Projects/ventures/c4d && l"
-alias wpthemes="~/Projects/ventures/rdm-themes && l"
-alias rdm="~/Projects/ventures/wp-themes/RDMFramework && l"
-alias archives="~/Projects/archives && l"
+	alias projects="cd ~/Projects && l"
+	alias repos="~/Projects/repos && l"
+	alias sites="~/Projects/sites && l"
+	alias tests="~/Projects/tests && l"
+	alias vents="~/Projects/ventures && l"
+	alias c4d="~/Projects/ventures/c4d && l"
+	alias wpthemes="~/Projects/ventures/rdm-themes && l"
+	alias rdm="~/Projects/ventures/wp-themes/RDMFramework && l"
+	alias archives="~/Projects/archives && l"
 
 # RDM BUILDs
-alias myz="cd ~/Projects/repos/shell/omz/oh-my-zsh-rdm-theme && l" # OPEN REPO
+	alias myz="cd ~/Projects/repos/shell/omz/oh-my-zsh-rdm-theme && l" # OPEN REPO
 
-alias mydf="cd ~/Projects/repos/shell/dotfiles && l" # OPEN REPO
-alias cuts="subl ~/Projects/repos/shell/dotfiles/.confiles/.aliases"
-alias funs="subl ~/Projects/repos/shell/dotfiles/.confiles/.functions"
-alias confs="subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew"
-alias confapps="subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew-apps"
+	alias mydf="cd ~/Projects/repos/shell/dotfiles && l" # OPEN REPO
+	alias cuts="subl ~/Projects/repos/shell/dotfiles/.confiles/.aliases"
+	alias funs="subl ~/Projects/repos/shell/dotfiles/.confiles/.functions"
+	alias confs="subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew"
+	alias confapps="subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew-apps"
 
 export EDITOR='subl -w' # EDIT WITH SUBLIME TEXT
 
@@ -46,57 +46,58 @@ export EDITOR='subl -w' # EDIT WITH SUBLIME TEXT
 # HomeBrew aliases
 # -------------------------------------------------------------------
 
-alias brews='brew list -1'
+	alias brews='brew list -1'
 
 # -------------------------------------------------------------------
 # Git aliases
 # -------------------------------------------------------------------
 
-alias ga='git add -A'
-alias gp='git push'
-alias gl='git log'
-alias gs='git status'
-alias gd='git diff'
-alias gm='git commit -m'
-alias gc='git commit'
-alias gc='git add -A && git commit'
-alias gma='git commit -am'
-alias gb='git branch -va' # List all local and remote-tracking branches
-alias gck='git checkout'
-alias gckb='git checkout -b'
-alias gra='git remote add'
-alias grr='git remote rm'
-alias grr='git remote -v' # List the current remotes
-alias gpl='git pull'
-alias clone='git clone'
-alias gta='git tag  -m'
-alias grf='git reflog'
-alias gv='git log --pretty=format:'%s' | cut -d " " -f 1 | sort | uniq -c | sort -nr'
-alias fetch='git fetch'
-alias merge='git merge'
-alias stash='git stash'
+	alias ga='git add --all'
+	alias gp='git push'
+	alias gpf='git push --force'
+	alias gl='git log'
+	alias gs='git status'
+	alias gd='git diff'
+	alias gm='git commit -m'
+	alias gc='git commit'
+	alias gc='git add -A && git commit'
+	alias gma='git commit -am'
+	alias gb='git branch -va' # List all local and remote-tracking branches
+	alias gck='git checkout'
+	alias gckb='git checkout -b'
+	alias gra='git remote add'
+	alias grr='git remote rm'
+	alias grr='git remote -v' # List the current remotes
+	alias gpl='git pull'
+	alias clone='git clone'
+	alias gta='git tag  -m'
+	alias grf='git reflog'
+	alias gv='git log --pretty=format:'%s' | cut -d " " -f 1 | sort | uniq -c | sort -nr'
+	alias fetch='git fetch'
+	alias merge='git merge'
+	alias stash='git stash'
 
 
 # leverage an alias from the ~/.gitconfig
-alias gh='git hist'
-alias gt='git today'
-alias glg1='git lg1'
-alias glg2='git lg2'
-alias glg='git lg'
+	alias gh='git hist'
+	alias gt='git today'
+	alias glg1='git lg1'
+	alias glg2='git lg2'
+	alias glg='git lg'
 
  git config --global alias.logs "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # curiosities
 # gsh shows the number of commits for the current repos for all developers
-alias gsh="git shortlog | grep -E '^[ ]+\w+' | wc -l"
+	alias gsh="git shortlog | grep -E '^[ ]+\w+' | wc -l"
 
 # gu shows a list of all developers and the number of commits they've made
-alias gu="git shortlog | grep -E '^[^ ]'"
+	alias gu="git shortlog | grep -E '^[^ ]'"
 
 # -------------------------------------------------------------------
 # Capistrano aliases
 # -------------------------------------------------------------------
-alias capd='cap deploy'
+	alias capd='cap deploy'
 
 # -------------------------------------------------------------------
 # Laravel aliases
@@ -106,72 +107,72 @@ alias capd='cap deploy'
 # -------------------------------------------------------------------
 # Postgre SQL
 # -------------------------------------------------------------------
-alias pgon='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias pgoff='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+	alias pgon='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+	alias pgoff='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 # -------------------------------------------------------------------
 # MySQL aliases
 # -------------------------------------------------------------------
-alias myon='mysql.server start'
-alias myoff='mysql.server stop'
-alias myreboot='mysql.server restart'
-alias dropdb='mysqladmin -u root -p drop'
-alias createdb='mysqladmin -u root -p create'
-alias dblogin='mysql -u root -p'
+	alias myon='mysql.server start'
+	alias myoff='mysql.server stop'
+	alias myreboot='mysql.server restart'
+	alias dropdb='mysqladmin -u root -p drop'
+	alias createdb='mysqladmin -u root -p create'
+	alias dblogin='mysql -u root -p'
 
 # -------------------------------------------------------------------
 # dnsmasq aliases
 # -------------------------------------------------------------------
-alias startdnsmasq='sudo launchctl start homebrew.mxcl.dnsmasq'
-alias stopdnsmasq='sudo launchctl stop homebrew.mxcl.dnsmasq'
+	alias startdnsmasq='sudo launchctl start homebrew.mxcl.dnsmasq'
+	alias stopdnsmasq='sudo launchctl stop homebrew.mxcl.dnsmasq'
 
 # -------------------------------------------------------------------
 # Vagrant aliases
 # -------------------------------------------------------------------
-alias vms="~/Projects/vms && l"
-alias vup="vagrant up"  #start server
-alias vstop="vagrant halt"  #powerdown the server
-alias vpause="vagrant suspend" #stop server
-alias vstart="vagrant resume" #start server fro suspend
-alias vrld="vagrant reload"
-alias vssh="vagrant ssh"
-alias vstat="vagrant status"
-alias vdel="vagrant destory" #destroy the server
-alias vbox="vagrant box"
-alias vpro="vagrant provision" #rebuilds the config.
+	alias vms="~/Projects/vms && l"
+	alias vup="vagrant up"  #start server
+	alias vstop="vagrant halt"  #powerdown the server
+	alias vpause="vagrant suspend" #stop server
+	alias vstart="vagrant resume" #start server fro suspend
+	alias vrld="vagrant reload"
+	alias vssh="vagrant ssh"
+	alias vstat="vagrant status"
+	alias vdel="vagrant destory" #destroy the server
+	alias vbox="vagrant box"
+	alias vpro="vagrant provision" #rebuilds the config.
 
 # -------------------------------------------------------------------
 # Apache aliases
 # -------------------------------------------------------------------
-alias serverstart='apachectl -k start'
-alias serverstop='apachectl -k stop'
-alias serverboot='apachectl -k restart'
+	alias serverstart='apachectl -k start'
+	alias serverstop='apachectl -k stop'
+	alias serverboot='apachectl -k restart'
 
 # -------------------------------------------------------------------
 # Network Stuff
 # -------------------------------------------------------------------
-alias whois="whois -h whois-servers.net" # Enhanced WHOIS looku ps
+	alias whois="whois -h whois-servers.net" # Enhanced WHOIS looku ps
 
-alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder" # Flush Directory Service cache
+	alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder" # Flush Directory Service cache
 
 # -------------------------------------------------------------------
 # OSX
 # -------------------------------------------------------------------
 
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
-alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
+	alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
 # # Show/hide hidden files in Finder
-alias fshow="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias fhide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+	alias fshow="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+	alias fhide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # Hide/show all desktop icons (useful when presenting)
-alias fhidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-alias fshowdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+	alias fhidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+	alias fshowdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
 # Merge PDF files
 # Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
-alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
+	alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
 
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
