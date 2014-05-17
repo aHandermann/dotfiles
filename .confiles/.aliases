@@ -25,7 +25,7 @@
 	alias repos="~/Projects/repos && l"
 	alias sites="~/Projects/sites && l"
 	alias tests="~/Projects/tests && l"
-	alias vents="~/Projects/ventures && l"
+	alias ventures="~/Projects/ventures && l"
 	alias c4d="~/Projects/ventures/c4d && l"
 	alias wpthemes="~/Projects/ventures/wpthemes && l"
 	alias rdm="~/Projects/ventures/wp-themes/RDMFramework && l"
