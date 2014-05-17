@@ -40,7 +40,8 @@
 	alias confs="subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew"
 	alias confapps="subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew-apps"
 
-export EDITOR='subl -w' # EDIT WITH SUBLIME TEXT
+export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
+
 
 # -------------------------------------------------------------------
 # HomeBrew aliases
