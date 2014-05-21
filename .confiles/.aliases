@@ -5,14 +5,14 @@
 
 	alias cl='clear'
 	alias cll='clear && l'
-	alias del="rm -Rf"
-	alias dropbox="cd ~/Dropbox\ \(Rainy\ Day\ Media\)"
-	alias dropboxp="cd ~/Dropbox\ \(Personal\)"
+	alias del='rm -Rf'
+	alias dropbox='cd ~/Dropbox\ \(Rainy\ Day\ Media\)'
+	alias dropboxp='cd ~/Dropbox\ \(Personal\)'
 
 
-	alias mypath="subl ~/Projects/repos/shell/dotfiles/.confiles/.path"
-	alias expath="subl ~/Projects/repos/shell/dotfiles/.confiles/.exports"
-	alias profile="subl ~/.zshrc"
+	alias mypath='subl ~/Projects/repos/shell/dotfiles/.confiles/.path'
+	alias expath='subl ~/Projects/repos/shell/dotfiles/.confiles/.exports'
+	alias profile='subl ~/.zshrc'
 
 	alias editssh='subl .ssh/known_hosts' # EDIT SSH HOSTS
 	alias copyssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"' # COPY SSH PUBLIC KEY
@@ -21,24 +21,23 @@
 	alias st3='cd /Users/eheltzel/Library/Application\ Support/Sublime\ Text\ 3 && subl .'
 
 # FORKED REPOS AND OTHER PROJECTS
-	alias projects="cd ~/Projects && l"
-	alias repos="~/Projects/repos && l"
-	alias sites="~/Projects/sites && l"
-	alias tests="~/Projects/tests && l"
-	alias ventures="~/Projects/ventures && l"
-	alias c4d="~/Projects/ventures/c4d && l"
-	alias wpthemes="~/Projects/ventures/wpthemes && l"
-	alias rdm="~/Projects/ventures/wp-themes/RDMFramework && l"
-	alias archives="~/Projects/archives && l"
+	alias projects='cd ~/Projects && l'
+	alias repos='~/Projects/repos && l'
+	alias sites='~/Projects/sites && l'
+	alias tests='~/Projects/tests && l'
+	alias c4d='~/Projects/repos/c4d && l'
+	alias wpthemes='~/Projects/repos/wp-themes && l'
+	alias rdm='~/Projects/repos/wp-themes/RDMFramework && l'
+	alias archives='~/Projects/archives && l'
 
 # RDM BUILDs
-	alias myz="cd ~/Projects/repos/shell/omz/oh-my-zsh-rdm-theme && l" # OPEN REPO
+	alias myz='cd ~/Projects/repos/shell/omz/oh-my-zsh-rdm-theme && l' # OPEN REPO
 
-	alias mydf="cd ~/Projects/repos/shell/dotfiles && l" # OPEN REPO
-	alias cuts="subl ~/Projects/repos/shell/dotfiles/.confiles/.aliases"
-	alias funs="subl ~/Projects/repos/shell/dotfiles/.confiles/.functions"
-	alias confs="subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew"
-	alias confapps="subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew-apps"
+	alias mydf='cd ~/Projects/repos/shell/dotfiles && l' # OPEN REPO
+	alias cuts='subl ~/Projects/repos/shell/dotfiles/.confiles/.aliases'
+	alias funs='subl ~/Projects/repos/shell/dotfiles/.confiles/.functions'
+	alias confs='subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew'
+	alias confapps='subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew-apps'
 
 export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 
@@ -73,7 +72,7 @@ export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 	alias clone='git clone'
 	alias gta='git tag  -m'
 	alias grf='git reflog'
-	alias gv='git log --pretty=format:'%s' | cut -d " " -f 1 | sort | uniq -c | sort -nr'
+	alias gv='git log --pretty=format:'%s' | cut -d ' ' -f 1 | sort | uniq -c | sort -nr'
 	alias fetch='git fetch'
 	alias merge='git merge'
 	alias stash='git stash'
@@ -86,14 +85,14 @@ export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 	alias glg2='git lg2'
 	alias glg='git lg'
 
- git config --global alias.logs "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+ git config --global alias.logs 'log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit'
 
 # curiosities
 # gsh shows the number of commits for the current repos for all developers
-	alias gsh="git shortlog | grep -E '^[ ]+\w+' | wc -l"
+	alias gsh='git shortlog | grep -E '^[ ]+\w+' | wc -l'
 
 # gu shows a list of all developers and the number of commits they've made
-	alias gu="git shortlog | grep -E '^[^ ]'"
+	alias gu='git shortlog | grep -E '^[^ ]''
 
 # -------------------------------------------------------------------
 # Capistrano aliases
@@ -130,17 +129,17 @@ export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 # -------------------------------------------------------------------
 # Vagrant aliases
 # -------------------------------------------------------------------
-	alias vms="~/Projects/vms && l"
-	alias vup="vagrant up"  #start server
-	alias vstop="vagrant halt"  #powerdown the server
-	alias vpause="vagrant suspend" #stop server
-	alias vstart="vagrant resume" #start server fro suspend
-	alias vrld="vagrant reload"
-	alias vssh="vagrant ssh"
-	alias vstat="vagrant status"
-	alias vdel="vagrant destory" #destroy the server
-	alias vbox="vagrant box"
-	alias vpro="vagrant provision" #rebuilds the config.
+	alias vms='~/Projects/vms && l'
+	alias vup='vagrant up'  #start server
+	alias vstop='vagrant halt'  #powerdown the server
+	alias vpause='vagrant suspend' #stop server
+	alias vstart='vagrant resume' #start server fro suspend
+	alias vrld='vagrant reload'
+	alias vssh='vagrant ssh'
+	alias vstat='vagrant status'
+	alias vdel='vagrant destory' #destroy the server
+	alias vbox='vagrant box'
+	alias vpro='vagrant provision' #rebuilds the config.
 
 # -------------------------------------------------------------------
 # Apache aliases
@@ -152,24 +151,24 @@ export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 # -------------------------------------------------------------------
 # Network Stuff
 # -------------------------------------------------------------------
-	alias whois="whois -h whois-servers.net" # Enhanced WHOIS looku ps
+	alias whois='whois -h whois-servers.net' # Enhanced WHOIS looku ps
 
-	alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder" # Flush Directory Service cache
+	alias flush='dscacheutil -flushcache && killall -HUP mDNSResponder' # Flush Directory Service cache
 
 # -------------------------------------------------------------------
 # OSX
 # -------------------------------------------------------------------
 
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
-	alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
+	alias lscleanup='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
 
 # # Show/hide hidden files in Finder
-	alias fshow="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-	alias fhide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+	alias fshow='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'
+	alias fhide='defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder'
 
 # Hide/show all desktop icons (useful when presenting)
-	alias fhidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-	alias fshowdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+	alias fhidedesktop='defaults write com.apple.finder CreateDesktop -bool false && killall Finder'
+	alias fshowdesktop='defaults write com.apple.finder CreateDesktop -bool true && killall Finder'
 
 # Merge PDF files
 # Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
@@ -177,29 +176,29 @@ export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
-  alias "$method"="lwp-request -m '$method'"
+  alias '$method'='lwp-request -m '$method''
 done
 
 # Ring the terminal bell, and put a badge on Terminal.app’s Dock icon
 # (useful when executing time-consuming commands)
-#alias badge="tput bel"
+#alias badge='tput bel'
 
 # # PlistBuddy alias, because sometimes `defaults` just doesn’t cut it
-#alias plistbuddy="/usr/libexec/PlistBuddy"
+#alias plistbuddy='/usr/libexec/PlistBuddy'
 
 # # Canonical hex dump; some systems have this symlinked
-# command -v hd > /dev/null || alias hd="hexdump -C"
+# command -v hd > /dev/null || alias hd='hexdump -C'
 
 # # OS X has no `md5sum`, so use `md5` as a fallback
-# command -v md5sum > /dev/null || alias md5sum="md5"
+# command -v md5sum > /dev/null || alias md5sum='md5'
 
 # # OS X has no `sha1sum`, so use `shasum` as a fallback
-# command -v sha1sum > /dev/null || alias sha1sum="shasum"
+# command -v sha1sum > /dev/null || alias sha1sum='shasum'
 
 # # ROT13-encode text. Works for decoding, too! ;)
 # alias rot13='tr a-zA-Z n-za-mN-ZA-M'
 
 # Disable Spotlight
-# alias spotoff="sudo mdutil -a -i off"
+# alias spotoff='sudo mdutil -a -i off'
 # Enable Spotlight
-# alias spoton="sudo mdutil -a -i on"
+# alias spoton='sudo mdutil -a -i on'
