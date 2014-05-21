@@ -85,11 +85,11 @@ export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 	alias glg2='git lg2'
 	alias glg='git lg'
 
- git config --global alias.logs 'log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit'
+ git config --global alias.logs 'log --color --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 
 # curiosities
 # gsh shows the number of commits for the current repos for all developers
-	alias gsh='git shortlog | grep -E '^[ ]+\w+' | wc -l'
+	alias gsh='git shortlog | grep -E "^[ ]+\w+" | wc -l'
 
 # gu shows a list of all developers and the number of commits they've made
 	alias gu='git shortlog | grep -E '^[^ ]''
