@@ -52,6 +52,7 @@
   whitespace = fix
 
 [alias]
+  aa = add --all
   co = checkout
   cb = checkout -b
   ct = checkout -t
