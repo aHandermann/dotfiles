@@ -335,7 +335,7 @@ defaults write com.apple.dock showhidden -bool true
 ln -s /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app /Applications/iOS\ Simulator.app
 
 # Add a spacer to the left side of the Dock (where the applications are)
-defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
+# defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
 
 # Add a spacer to the right side of the Dock (where the Trash is)
 #defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}'
@@ -352,7 +352,7 @@ defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-ty
 # 10: Put display to sleep
 # 11: Launchpad
 
-# Top left screen corner → Mission Control
+# Top left screen corner → Show applicaton windows
 defaults write com.apple.dock wvous-tl-corner -int 3
 # defaults write com.apple.dock wvous-tl-modifier -int 0
 
