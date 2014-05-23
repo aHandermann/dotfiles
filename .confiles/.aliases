@@ -49,7 +49,7 @@ export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 	alias brews='brew list -1'
 
 # -------------------------------------------------------------------
-# Git aliases
+# Git aliases Most used in my current worflow
 # -------------------------------------------------------------------
 
 	alias ga='git add --all'
@@ -60,30 +60,16 @@ export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 	alias gd='git diff'
 	alias gm='git commit -m'
 	alias gc='git commit'
-	alias gc='git add -A && git commit'
+	alias gca='git add --all && git commit'
 	alias gma='git commit -am'
-	alias gb='git branch -va' # List all local and remote-tracking branches
-	alias gck='git checkout'
-	alias gckb='git checkout -b'
-	alias gra='git remote add'
 	alias grr='git remote rm'
-	alias grr='git remote -v' # List the current remotes
+	alias grv='git remote -v' # List the current remotes
 	alias gpl='git pull'
 	alias clone='git clone'
-	alias gta='git tag  -m'
 	alias grf='git reflog'
 	alias gv='git log --pretty=format:'%s' | cut -d ' ' -f 1 | sort | uniq -c | sort -nr'
 	alias fetch='git fetch'
 	alias merge='git merge'
-	alias stash='git stash'
-
-
-# leverage an alias from the ~/.gitconfig
-	alias gh='git hist'
-	alias gt='git today'
-	alias glg1='git lg1'
-	alias glg2='git lg2'
-	alias glg='git lg'
 
  git config --global alias.logs 'log --color --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 
@@ -158,8 +144,6 @@ export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 # -------------------------------------------------------------------
 # OSX
 # -------------------------------------------------------------------
-
-<<<<<<< HEAD
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
 	alias lscleanup='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
 =======
@@ -171,16 +155,15 @@ alias apres='apachectl -k restart'
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update'
 
-# hub tool 
+# hub tool
 alias git='hub'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en1"
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
->>>>>>> upstream/master
 
-# # Show/hide hidden files in Finder
+# Show/hide hidden files in Finder
 	alias fshow='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'
 	alias fhide='defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder'
 
