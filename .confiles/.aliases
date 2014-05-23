@@ -146,7 +146,6 @@ export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 # -------------------------------------------------------------------
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
 	alias lscleanup='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
-=======
 # apache aliases
 alias apron='apachectl -k start'
 alias aproff='apachectl -k stop'
