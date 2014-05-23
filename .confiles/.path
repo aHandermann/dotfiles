@@ -6,8 +6,8 @@ PATH=/usr/local/sbin:usr/local/lib:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:
 # node
 PATH=$PATH:$(npm config get prefix)/bin
 
-# brew
-PATH=$(brew --prefix)/bin:$(brew --prefix coreutils)/libexec/gnubin:$PATH
+# homebrew
+PATH=$(brew --prefix)/bin:$(brew --prefix)/sbin:$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
 # Add `~/bin` to the `$PATH`
 PATH=$HOME/bin:$PATH
