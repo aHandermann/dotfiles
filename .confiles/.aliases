@@ -28,6 +28,8 @@
 	alias c4d='~/Projects/repos/c4d && l'
 	alias wpthemes='~/Projects/repos/wp-themes && l'
 	alias rdm='~/Projects/repos/wp-themes/RDMFramework && l'
+	alias htmlbp='~/Projects/repos/static/boilerplates && l'
+	alias cssf='~/Projects/repos/static/cssFW && l'
 	alias archives='~/Projects/archives && l'
 
 # RDM BUILDs
