@@ -27,15 +27,17 @@
 	alias tests='~/Projects/tests && l'
 	alias c4d='~/Projects/repos/c4d && l'
 	alias wpthemes='~/Projects/repos/wp-themes && l'
-	alias rdm='~/Projects/repos/wp-themes/RDMFramework && l'
+	alias rdm='~/Projects/repos/rainydaymedia && l'
 	alias htmlbp='~/Projects/repos/static/boilerplates && l'
 	alias cssf='~/Projects/repos/static/cssFW && l'
 	alias archives='~/Projects/archives && l'
 
 # RDM BUILDs
-	alias myz='cd ~/Projects/repos/shell/omz/oh-my-zsh-rdm-theme && l' # OPEN REPO
+	alias myz='cd ~/Projects/repos/shell/omz/oh-my-zsh-rdm-theme && l && subl .'  # OPEN REPO IN SUBLIME TEXT
+	alias rdmf='~/Projects/repos/rainydaymedia/RDMFramework && l && subl .'
+	alias rdmsh='~/Projects/repos/rainydaymedia/RDMShell && l && subl .'
 
-	alias mydf='cd ~/Projects/repos/shell/dotfiles && l' # OPEN REPO
+	alias mydf='cd ~/Projects/repos/shell/dotfiles && l && subl .' # OPEN REPO IN SUBLIME TEXT
 	alias cuts='subl ~/Projects/repos/shell/dotfiles/.confiles/.aliases'
 	alias funs='subl ~/Projects/repos/shell/dotfiles/.confiles/.functions'
 	alias confs='subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew'
