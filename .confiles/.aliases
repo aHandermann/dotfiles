@@ -38,10 +38,7 @@
 	alias rdmsh='~/Projects/repos/rainydaymedia/RDMShell && l && subl .'
 
 	alias mydf='cd ~/Projects/repos/shell/dotfiles && l && subl .' # OPEN REPO IN SUBLIME TEXT
-	alias cuts='subl ~/Projects/repos/shell/dotfiles/.confiles/.aliases'
-	alias funs='subl ~/Projects/repos/shell/dotfiles/.confiles/.functions'
-	alias confs='subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew'
-	alias confapps='subl ~/Projects/repos/shell/dotfiles/dotfiles-cmd/libexec/dotf-homebrew-apps'
+	alias dotconfig='cd ~/Projects/repos/shell/dotfiles && ./dotf config-files'
 
 export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 
