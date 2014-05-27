@@ -1,7 +1,6 @@
 # -------------------------------------------------------------------
 # MY STUFF
 # -------------------------------------------------------------------
-	alias dotf='./dotf'
 
 	alias cl='clear'
 	alias cll='clear && l'
@@ -16,7 +15,7 @@
 
 	alias editssh='subl .ssh/known_hosts' # EDIT SSH HOSTS
 	alias copyssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"' # COPY SSH PUBLIC KEY
-	alias ping='ping -c' #PING WITH PACKET COUNT
+	alias ping='ping -c' # PING WITH PACKET COUNT
 
 	alias st3='cd /Users/eheltzel/Library/Application\ Support/Sublime\ Text\ 3'
 
@@ -26,11 +25,16 @@
 	alias sites='~/Projects/sites && l'
 	alias tests='~/Projects/tests && l'
 	alias c4d='~/Projects/repos/c4d && l'
-	alias wpthemes='~/Projects/repos/wp-themes && l'
+
 	alias rdm='~/Projects/repos/rainydaymedia && l'
-	alias htmlbp='~/Projects/repos/static/boilerplates && l'
 	alias cssf='~/Projects/repos/static/cssFW && l'
 	alias archives='~/Projects/archives && l'
+
+# VENTURES
+	alias static='~/Projects/repos/static && l' # THEME MARKET STUFF
+	alias wp='~/Projects/repos/wordpress && l'
+	alias wpth='~/Projects/repos/wordpress/themes && l' # THEME MARKET STUFF
+	alias wppl='~/Projects/repos/wordpress/plugins && l'
 
 # RDM BUILDs
 	alias myz='cd ~/Projects/repos/shell/omz/oh-my-zsh-rdm-theme && l && subl .'  # OPEN REPO IN SUBLIME TEXT
