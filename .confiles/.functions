@@ -1,16 +1,20 @@
 # -------------------------------------------------------------------
 # Update Packages
 # -------------------------------------------------------------------
+UPDATE_OSX='..........Lets check for OS X updates'
 UPDATE_HOMEBREW='..........Updating Homebrew to the latest version'
 UPGRADE_HOMEBREW='..........Upgrading already-installed Homebrew formulas'
 CLEAN_HOMEBREW='..........Cleaning up outdated versions from the Homebrew cellar'
 DR_HOMEBREW='..........Checking with the Doctor'
-UPDATE_RVM='..........Updating RVM to the latest stable'
+UPDATE_RVM='..........Updating RVM to the latest stable '
 CLEAN_RVM='..........Cleaning up RVM'
+UPDATE_GEMS='..........Updating Installed GEMs'
 NPM_PACKAGE_UPDATE='..........Updating already-installed Node-NPM packages'
 NPM_UPDATE='..........Updating NPM to the latest stable'
 
 function update() {
+	echo -e "$fg_bold[cyan] $UPDATE_OSX $reset_color"
+	softwareupdate --install --all
 	echo -e "$fg_bold[cyan] $UPDATE_HOMEBREW $reset_color"
 	brew update
 	echo -e "$fg_bold[cyan] $UPGRADE_HOMEBREW $reset_color"
@@ -19,14 +23,16 @@ function update() {
 	brew cleanup
 	echo -e "$fg_bold[cyan] $DR_HOMEBREW $reset_color"
 	brew doctor
+	echo -e "$fg_bold[cyan] $NPM_PACKAGE_UPDATE $reset_color"
+	npm update -g
+	echo -e "$fg_bold[cyan] $NPM_UPDATE $reset_color"
+	npm update npm -g
 	echo -e "$fg_bold[cyan] $UPDATE_RVM $reset_color"
 	rvm get stable
 	echo -e "$fg_bold[cyan] $CLEAN_RVM $reset_color"
 	rvm cleanup all
-	echo -e "$fg_bold[cyan] $NPM_PACKAGE_UPDATE $reset_color"
-	npm update
-	echo -e "$fg_bold[cyan] $NPM_UPDATE $reset_color"
-	npm update -g npm
+	echo -e "$fg_bold[cyan] $UPDATE_GEMS $reset_color"
+	gem update
 }
 
 # -------------------------------------------------------------------
