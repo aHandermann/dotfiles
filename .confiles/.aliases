@@ -14,7 +14,7 @@
 	alias profile='subl ~/.zshrc'
 
 	alias editssh='subl .ssh/known_hosts' # EDIT SSH HOSTS
-	alias copyssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"' # COPY SSH PUBLIC KEY
+	alias cpssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"' # COPY SSH PUBLIC KEY
 	alias ping='ping -c' # PING WITH PACKET COUNT
 
 	alias st3='cd /Users/eheltzel/Library/Application\ Support/Sublime\ Text\ 3'
@@ -41,7 +41,8 @@
 	alias rdmf='~/Projects/repos/rainydaymedia/RDMFramework && l && subl .'
 	alias rdmsh='~/Projects/repos/rainydaymedia/RDMShell && l && subl .'
 
-	alias mydf='cd ~/Projects/repos/shell/dotfiles && l && subl .' # OPEN REPO IN SUBLIME TEXT
+	alias mydf='cd ~/Projects/repos/shell/dotfiles && l' # NAVIGATE TO PROJECT
+	alias cuts='cd ~/Projects/repos/shell/dotfiles && subl . ' # OPEN PROJECT IN SUBLIME TEXT
 	alias dotconfig='cd ~/Projects/repos/shell/dotfiles && ./dotf config-files'
 
 export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
