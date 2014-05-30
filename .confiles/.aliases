@@ -38,8 +38,8 @@
 
 # RDM BUILDs
 	alias myz='cd ~/Projects/repos/shell/omz/oh-my-zsh-rdm-theme && l && subl .'  # OPEN REPO IN SUBLIME TEXT
-	alias rdmf='~/Projects/repos/rainydaymedia/RDMFramework && l && subl .'
-	alias rdmsh='~/Projects/repos/rainydaymedia/RDMShell && l && subl .'
+	alias rdmf='~/Projects/repos/rainydaymedia/RDMFramework && l'
+	alias rdmsh='~/Projects/repos/rainydaymedia/RDMShell && l'
 
 	alias mydf='cd ~/Projects/repos/shell/dotfiles && l' # NAVIGATE TO PROJECT
 	alias cuts='cd ~/Projects/repos/shell/dotfiles && subl . ' # OPEN PROJECT IN SUBLIME TEXT
