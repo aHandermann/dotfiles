@@ -25,7 +25,7 @@ unset file
 source $ZSH/oh-my-zsh.sh
 
 # Add the battery status to right-side of prompt -- Thanks @rickyah
-# RPROMPT='$(battery_pct_prompt)'
+RPROMPT='$(battery_pct)'
 
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin
