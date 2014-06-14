@@ -120,7 +120,7 @@ PROMPT='
 # RVM Ruby version
 # RPROMPT=%{$fg[yellow]%}rvm:%{$reset_color%}%{$FG[239]%}%{$fg[red]%}${rvm_ruby}
 
-# Add the battery status to right-side of prompt -- Thanks @rickyah
+# Add the battery status to right-side of prompt
 RPROMPT='$(battery_pct)'
 
 export SPROMPT="Correct $fg[red]%$reset_color to $fg[green]%r$reset_color [(y)es (n)o (a)bort (e)dit]? "
