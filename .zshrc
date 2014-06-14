@@ -11,7 +11,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundle colorize fasd gem node npm vagrant)
+plugins=(brew bundle colorize fasd gem node npm vagrant battery)
 
 # register homebrew completions folder
 fpath=('/usr/local/share/zsh/site-functions/' $fpath)
@@ -23,9 +23,6 @@ done
 unset file
 
 source $ZSH/oh-my-zsh.sh
-
-# Add the battery status to right-side of prompt -- Thanks @rickyah
-RPROMPT='$(battery_pct)'
 
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin
