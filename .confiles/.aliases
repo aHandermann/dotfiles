@@ -97,6 +97,11 @@ export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 # alias laravel='composer create-project laravel/laravel' # Not sure I need this that often -- commented out for reference
 
 # -------------------------------------------------------------------
+# Ruby aliases
+# -------------------------------------------------------------------
+	alias gemlist='gems query --local'
+
+# -------------------------------------------------------------------
 # Postgre SQL
 # -------------------------------------------------------------------
 	alias pgon='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
