@@ -97,6 +97,11 @@ export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 # alias laravel='composer create-project laravel/laravel' # Not sure I need this that often -- commented out for reference
 
 # -------------------------------------------------------------------
+# PHP aliases
+# -------------------------------------------------------------------
+
+
+# -------------------------------------------------------------------
 # Ruby aliases
 # -------------------------------------------------------------------
 	alias gems='gem query --local'
