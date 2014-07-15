@@ -6,10 +6,10 @@
 	alias cll='clear && l'
 	alias del='rm -Rf'
 
-	alias dropbox='cd ~/Dropbox\ \(Rainy\ Day\ Media\)' # FASTER NAV TO BUSINESS DROPBOX
-	alias dropboxp='cd ~/Dropbox\ \(Personal\)' # FASTER NAV TO PERSONAL DROPBOX
-	alias gdrive='cd ~/Google\ Drive' # FASTER NAV TO GOOGLE DRIVE
-
+	alias dropbox='cd ~/Dropbox\ \(Rainy\ Day\ Media\)' # DROPBOX FOR BUSINESS
+	alias dropboxp='cd ~/Dropbox\ \(Personal\)' # PERSONAL DROPBOX
+	alias gdrive='cd ~/Google\ Drive' # GOOGLE DRIVE
+	alias clients='cd ~/Google\ Drive/Opportunities/Clients' # CLIENTS IN GOOGLE DRIVE
 
 	alias mypath='subl ~/Projects/repos/shell/dotfiles/.confiles/.path'
 	alias expath='subl ~/Projects/repos/shell/dotfiles/.confiles/.exports'
