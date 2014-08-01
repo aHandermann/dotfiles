@@ -67,9 +67,9 @@ system('brew install josegonzalez/php/composer')
 system('brew install phpmyadmin')
 system('brew install dnsmasq')
 
-puts " Installing Thoughtbot Gitsh"
-system('brew tap thoughtbot/formulae')
-system('brew install gitsh')
+# puts " Installing Thoughtbot Gitsh"
+# system('brew tap thoughtbot/formulae')
+# system('brew install gitsh')
 
 puts "Installing git & git-flow"
 puts "Installing git & git-flow & git-hub"
