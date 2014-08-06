@@ -26,7 +26,6 @@
 	alias repos='~/Projects/repos && l'
 	alias sites='~/Projects/sites && l'
 	alias tests='~/Projects/tests && l'
-	alias c4d='~/Projects/repos/c4d && l'
 
 	alias rdm='~/Projects/repos/rainydaymedia && l'
 	alias cssf='~/Projects/repos/static/cssFW && l'
