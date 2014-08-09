@@ -14,7 +14,6 @@
 	alias mypath='subl ~/Projects/repos/shell/dotfiles/.confiles/.path'
 	alias expath='subl ~/Projects/repos/shell/dotfiles/.confiles/.exports'
 	alias profile='subl ~/.zshrc'
-
 	alias editssh='subl .ssh/known_hosts' # EDIT SSH HOSTS
 	alias cpssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"' # COPY SSH PUBLIC KEY
 	alias ping='ping -c' # PING WITH PACKET COUNT
