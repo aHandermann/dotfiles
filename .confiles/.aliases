@@ -18,7 +18,7 @@
 	alias cpssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"' # COPY SSH PUBLIC KEY
 	alias ping='ping -c' # PING WITH PACKET COUNT
 
-	alias st3='cd /Users/eheltzel/Library/Application\ Support/Sublime\ Text\ 3'
+	alias st3='cd /Users/eheltzel/Library/Application\ Support/Sublime\ Text\ 3' # SAVING MY ENTIRE SUBLIME SETUP
 
 # FORKED REPOS AND OTHER PROJECTS
 	alias projects='cd ~/Projects && l'
@@ -28,7 +28,6 @@
 
 	alias rdm='~/Projects/repos/rainydaymedia && l'
 	alias cssf='~/Projects/repos/static/cssFW && l'
-	alias archives='~/Projects/archives && l'
 
 # VENTURES
 	alias static='~/Projects/repos/static && l' # THEME MARKET STUFF
@@ -100,7 +99,7 @@ export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 # -------------------------------------------------------------------
 # PHP aliases
 # -------------------------------------------------------------------
-
+	alias phpstart='php -S localhost:' # Add port and path to projet root
 
 # -------------------------------------------------------------------
 # Ruby aliases
