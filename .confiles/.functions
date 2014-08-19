@@ -8,7 +8,9 @@ CLEAN_HOMEBREW='..........Cleaning up outdated versions from the Homebrew cellar
 DR_HOMEBREW='..........Checking with the Doctor'
 UPDATE_RVM='..........Updating RVM to the latest stable '
 CLEAN_RVM='..........Cleaning up RVM'
+UPDATE_GEM='..........Updating the GEM System'
 UPDATE_GEMS='..........Updating Installed GEMs'
+UPDATE_GEMS_CLEANUP='..........Cleaning up the GEMs'
 NPM_PACKAGE_UPDATE='..........Updating already-installed Node-NPM packages'
 NPM_UPDATE='..........Updating NPM to the latest stable'
 
@@ -31,9 +33,14 @@ function update() {
 	rvm get stable
 	echo -e "$fg_bold[cyan] $CLEAN_RVM $reset_color"
 	rvm cleanup all
+	echo -e "$fg_bold[cyan] $UPDATE_GEM $rest_color"
+	gem update --system
 	echo -e "$fg_bold[cyan] $UPDATE_GEMS $reset_color"
 	gem update
+	echo -e "$fg_bold[cyan] $UPDATE_GEMS_CLEANUP $reset_color"
+	gem cleanup
 }
+
 # UPDATE HOMEBREW ONLY
 fuction brewUpdate(){
 	echo -e "$fg_bold[cyan] $UPDATE_HOMEBREW $reset_color"
