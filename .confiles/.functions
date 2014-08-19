@@ -34,6 +34,17 @@ function update() {
 	echo -e "$fg_bold[cyan] $UPDATE_GEMS $reset_color"
 	gem update
 }
+# UPDATE HOMEBREW ONLY
+fuction brewUpdate(){
+	echo -e "$fg_bold[cyan] $UPDATE_HOMEBREW $reset_color"
+	brew update
+	echo -e "$fg_bold[cyan] $UPGRADE_HOMEBREW $reset_color"
+	brew upgrade
+	echo -e "$fg_bold[cyan] $CLEAN_HOMEBREW $reset_color"
+	brew cleanup
+	echo -e "$fg_bold[cyan] $DR_HOMEBREW $reset_color"
+	brew doctor
+}
 
 # -------------------------------------------------------------------
 # Simple calculator
