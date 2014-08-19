@@ -19,6 +19,7 @@
 	alias ping='ping -c' # PING WITH PACKET COUNT
 
 	alias st3='cd /Users/eheltzel/Library/Application\ Support/Sublime\ Text\ 3' # SAVING MY ENTIRE SUBLIME SETUP
+	alias hostfile='subl /Volumes/Harry/private/etc/hosts' # HOST FILE MODS
 
 # FORKED REPOS AND OTHER PROJECTS
 	alias projects='cd ~/Projects && l'
