@@ -72,10 +72,9 @@ system('brew install dnsmasq')
 # system('brew install gitsh')
 
 puts "Installing git & git-flow"
-puts "Installing git & git-flow & git-hub"
+puts "Installing git & git-flow "
 system('brew install git')
 system('brew install git-flow-avh')
-system('brew install hub')
 
 puts "Installing imagemagick"
 system('brew install imagemagick')
