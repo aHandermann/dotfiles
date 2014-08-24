@@ -42,7 +42,7 @@ function update() {
 }
 
 # UPDATE HOMEBREW ONLY
-fuction brewUpdate(){
+fuction brewupdate(){
 	echo -e "$fg_bold[cyan] $UPDATE_HOMEBREW $reset_color"
 	brew update
 	echo -e "$fg_bold[cyan] $UPGRADE_HOMEBREW $reset_color"
