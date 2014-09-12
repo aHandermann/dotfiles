@@ -32,7 +32,7 @@
 
 # VENTURES
 	alias static='~/Projects/repos/static && l' # THEME MARKET STUFF
-	alias wp='~/Projects/repos/wordpress && l'
+	alias wordpress='~/Projects/repos/wordpress && l'
 	alias wpth='~/Projects/repos/wordpress/themes && l' # THEME MARKET STUFF
 	alias wppl='~/Projects/repos/wordpress/plugins && l'
 
