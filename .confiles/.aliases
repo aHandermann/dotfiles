@@ -57,14 +57,7 @@ export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 # -------------------------------------------------------------------
 # Git aliases Most used in my current worflow
 # -------------------------------------------------------------------
-
-	alias gl='git log'
-	alias gs='git status'
-	alias gd='git diff'
-	alias gm='git commit -m'
-	alias gc='git commit'
-	alias gca='git add --all && git commit'
-	alias gma='git commit -am'
+	alias gcuts='git config --get-regexp alias'
 	alias grr='git remote rm'
 	alias grv='git remote -v' # List the current remotes
 	alias grf='git reflog'

@@ -65,7 +65,10 @@
   cb = checkout -b
   ct = checkout -t
   cr = checkout --
+  d = diff
+  dt = difftool
   f = fetch --prune
+  mt = mergetool
   ps = push
   psf = push --force
   pl = pull
