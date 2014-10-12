@@ -1,6 +1,6 @@
 ## A nice `.dotfiles` setup
 
-Based on [Ricky's dotfiles](https://github.com/rickyah/dotfiles) which is in turn is based on [Mathias’s dotfiles](https://github.com/rickyah/dotfiles). 
+Based on [Ricky's dotfiles](https://github.com/rickyah/dotfiles) which is in turn is based on [Mathias’s dotfiles](https://github.com/rickyah/dotfiles).
 
 
 ### Changes
@@ -10,11 +10,11 @@ Based on [Ricky's dotfiles](https://github.com/rickyah/dotfiles) which is in tur
 * added the `install-all_with-apps` to run the Homebrew Cask apps
 
 ## ToDo
-- [ ] add more mysql aliases
-- [ ] add php server aliases
-- [ ] update vagrant  
-- [ ] update brew cask script
-- [ ] integrate `gitsh` into workflow.
+- [x] add more mysql aliases
+- [x] add php server aliases
+- [ ] update vagrant
+- [x] update brew cask script
+- [ ] ~~integrate `gitsh` into workflow.~~ scrapped this idea
 - [ ] better vagrant aliases and functions for wordpress
 
 ## Installation and Usage
@@ -23,7 +23,7 @@ Based on [Ricky's dotfiles](https://github.com/rickyah/dotfiles) which is in tur
 
 You can clone the repository wherever you want, I keep mine in`~/Projects/Repos/dotfiles`. The `dotf` script will copy the files to your home folder.
 
-Go to Terminal and run ☞ `git clone https://github.com/edtv82/dotfiles` 
+Go to Terminal and run ☞ `git clone https://github.com/edtv82/dotfiles`
 
 then `cd ~/YOUR_PATH/dotfiles`and run ☞ `./dotf`
 
@@ -48,7 +48,7 @@ Some useful dotf commands are:
 See 'dotf help <command>' for information on a specific command.
 ```
 
-With the `dotf <command> [<args>]` command you can control what to install. 
+With the `dotf <command> [<args>]` command you can control what to install.
 
 ### Install it all
 To install everything just type:
