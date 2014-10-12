@@ -53,15 +53,24 @@
 
 [alias]
   aa = add --all
-  co = checkout
-  cb = checkout -b
-  ct = checkout -t
-  cr = checkout --
   b = branch
   ba = branch -a
   bd = branch -d
   bD = branch -D
   bm = branch -m
+  c = commit
+  cm = commit -m
+  cma = commit -am
+  co = checkout
+  cb = checkout -b
+  ct = checkout -t
+  cr = checkout --
+  f = fetch --prune
+  ps = push
+  psf = push --force
+  pl = pull
+  pr = pull-request
+  r = rebase
   re = remote
   rea = remote -v
   rb = rebase
@@ -72,7 +81,6 @@
   t = tag -l
   s = status -s
   ss = status
-  r = rebase
   squash = "!f() { git rebase -i HEAD~$1; }; f"
   st = stash
   stl = stash list
@@ -80,13 +88,6 @@
   sts = "!f() { git stash show stash@{$1}; }; f"
   std = "!f() { git stash show stash@{$1} -U5; }; f"
   strm = "!f() { git stash drop stash@{$1} -U5; }; f"
-  c = commit
-  cm = commit -m
-  cma = commit -am
-  f = fetch --prune
-  ps = push
-  pl = pull
-  pr = pull-request
   l = "!f() { git log $1 --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit; }; f"
   lg = "!f() { git log $1 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit;};f"
   tracked = "!d() { git for-each-ref --format='%(refname:short)' refs/heads/ | while read b; do if r=$(git config --get branch.$b.remote); then m=$(git config --get branch.$b.merge); echo \"$b -> $r/${m##*/}\"; fi; done } ; d"
