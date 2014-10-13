@@ -204,14 +204,6 @@ Gemfile.lock
 ### Jekyll ###
 _site/
 
-### Yeoman ###
-node_modules/
-bower_components/
-*.log
-
-build/
-dist/
-
 ### Bower ###
 bower_components
 

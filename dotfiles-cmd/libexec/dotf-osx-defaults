@@ -2,13 +2,13 @@
 
 # Usage: dotf osx-defaults
 # Summary: Set custom defaults configurations in OSX
-# Help: Based on http://mths.be/osx. See this files or that URL for more info.
+# Help: Based on https://mths.be/osx. See this files or that URL for more info.
 
 echo "---------------------------------------------------------------------------------"
 echo "Setting personal OSX defaults"
 echo "---------------------------------------------------------------------------------"
 
-# ~/.osx — http://mths.be/osx
+# ~/.osx — https://mths.be/osx
 
 # Ask for the administrator password upfront
 echo "I need administration privileges to change some system defaults:"
@@ -76,7 +76,7 @@ defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 # Set Help Viewer windows to non-floating mode
 defaults write com.apple.helpviewer DevMode -bool true
 
-# Fix for the ancient UTF-8 bug in QuickLook (http://mths.be/bbo)
+# Fix for the ancient UTF-8 bug in QuickLook (https://mths.be/bbo)
 # Commented out, as this is known to cause problems when saving files in
 # Adobe Illustrator CS5 :(
 #echo "0x08000100:0" > ~/.CFUserTextEncoding

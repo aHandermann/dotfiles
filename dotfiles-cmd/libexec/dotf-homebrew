@@ -48,9 +48,10 @@ system('brew install findutils')
 
 puts "Installing Bash 4 (osx ships with an outdated version)"
 system('brew install bash')
+system('install bash-completion')
 
 puts "Installing wget"
-system('brew install wget')
+system('brew install wget --enable-iri')
 
 puts "Install fasd"
 system('brew install fasd')
@@ -58,35 +59,39 @@ system('brew install fasd')
 puts "Installing more recent versions of some OS X tools"
 system('brew tap homebrew/dupes')
 system('brew install homebrew/dupes/grep')
+system('brew install homebrew/dupes/screen')
 
 
 puts "Installing more recent versions of PHP and Composer"
 system('brew tap josegonzalez/php')
-system('brew install php55-intl')
+system('brew install php55 --with-gmp')
 system('brew install josegonzalez/php/composer')
 system('brew install phpmyadmin')
 system('brew install dnsmasq')
-
-# puts " Installing Thoughtbot Gitsh"
-# system('brew tap thoughtbot/formulae')
-# system('brew install gitsh')
 
 puts "Installing git & git-flow"
 puts "Installing git & git-flow "
 system('brew install git')
 system('brew install git-flow-avh')
 
-puts "Installing imagemagick"
-system('brew install imagemagick')
+puts "Installing some CTF tools & exiv2"
+system('brew install imagemagick --with-webp')
+system('brew install nmap')
+system('brew install pngcheck')
+system('brew install sqlmap')
+system('brew install rename')
+system('brew install tree')
+system('brew install webkit2png')
 
 puts "Install ssh-copy-id"
 system('brew install ssh-copy-id')
 
-puts "Installing unzip"
+puts "Installing unzip p7zip"
 system('brew install unzip')
+system('brew install p7zip')
 
 puts "Install vim and MacVim"
-system('brew install vim')
+system('brew install vim --override-system-vi')
 system('brew install macvim')
 
 puts "Installing tidy"
@@ -107,8 +112,8 @@ system('brew doctor')
 puts "Removing outdated versions from the cellar"
 system('brew cleanup')
 
-puts "Installing node"
-system('brew install node --without-npm')
+puts "Installing node with npm"
+system('brew install node')
 
 puts "Installing NPM"
 system('curl -L https://npmjs.org/install.sh | sh')
