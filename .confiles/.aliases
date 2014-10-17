@@ -22,11 +22,11 @@
 	alias hostfile='subl /Volumes/Harry/private/etc/hosts' # HOST FILE MODS
 
 # FORKED REPOS AND OTHER PROJECTS
-	alias projects='cd ~/Projects && l'
+	alias projects='~/Projects && l'
 	alias repos='~/Projects/repos && l'
 	alias sites='~/Projects/sites && l'
 	alias tests='~/Projects/tests && l'
-
+	alias labs='~/Projects/labs && l'
 	alias rdm='~/Projects/repos/rainydaymedia && l'
 	alias cssf='~/Projects/repos/static/cssFW && l'
 
