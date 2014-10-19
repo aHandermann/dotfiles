@@ -11,8 +11,8 @@
 	alias gdrive='cd ~/Google\ Drive' # GOOGLE DRIVE
 	alias clients='cd ~/Google\ Drive/Opportunities/Clients' # CLIENTS IN GOOGLE DRIVE
 
-	alias mypath='subl ~/Projects/repos/shell/dotfiles/.confiles/.path'
-	alias expath='subl ~/Projects/repos/shell/dotfiles/.confiles/.exports'
+	alias mypath='subl ~/Sites/repos/shell/dotfiles/.confiles/.path'
+	alias expath='subl ~/Sites/repos/shell/dotfiles/.confiles/.exports'
 	alias profile='subl ~/.zshrc'
 	alias editssh='subl ~/.ssh/known_hosts' # EDIT SSH HOSTS
 	alias cpssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"' # COPY SSH PUBLIC KEY
@@ -22,28 +22,28 @@
 	alias hostfile='subl /Volumes/Harry/private/etc/hosts' # HOST FILE MODS
 
 # FORKED REPOS AND OTHER PROJECTS
-	alias projects='~/Projects && l'
-	alias repos='~/Projects/repos && l'
-	alias sites='~/Projects/sites && l'
-	alias tests='~/Projects/tests && l'
-	alias labs='~/Projects/labs && l'
-	alias rdm='~/Projects/repos/rainydaymedia && l'
-	alias cssf='~/Projects/repos/static/cssFW && l'
+	alias sites='~/Sites && l'
+	alias repos='~/Sites/repos && l'
+	alias sites='~/Sites/sites && l'
+	alias tests='~/Sites/tests && l'
+	alias labs='~/Sites/labs && l'
+	alias rdm='~/Sites/repos/rainydaymedia && l'
+	alias cssf='~/Sites/repos/static/cssFW && l'
 
 # VENTURES
-	alias static='~/Projects/repos/static && l' # THEME MARKET STUFF
-	alias wordpress='~/Projects/repos/wordpress && l'
-	alias wpth='~/Projects/repos/wordpress/themes && l' # THEME MARKET STUFF
-	alias wppl='~/Projects/repos/wordpress/plugins && l'
+	alias static='~/Sites/repos/static && l' # THEME MARKET STUFF
+	alias wordpress='~/Sites/repos/wordpress && l'
+	alias wpth='~/Sites/repos/wordpress/themes && l' # THEME MARKET STUFF
+	alias wppl='~/Sites/repos/wordpress/plugins && l'
 
 # RDM BUILDs
-	alias myz='cd ~/Projects/repos/shell/omz/oh-my-zsh-rdm-theme && l && subl .'  # OPEN REPO IN SUBLIME TEXT
-	alias rdmf='~/Projects/repos/rainydaymedia/RDMFramework && l'
-	alias rdmsh='~/Projects/repos/rainydaymedia/RDMShell && l'
+	alias myz='cd ~/Sites/repos/shell/omz/oh-my-zsh-rdm-theme && l && subl .'  # OPEN REPO IN SUBLIME TEXT
+	alias rdmf='~/Sites/repos/rainydaymedia/RDMFramework && l'
+	alias rdmsh='~/Sites/repos/rainydaymedia/RDMShell && l'
 
-	alias mydf='cd ~/Projects/repos/shell/dotfiles && l' # NAVIGATE TO PROJECT
-	alias cuts='cd ~/Projects/repos/shell/dotfiles && subl . ' # OPEN PROJECT IN SUBLIME TEXT
-	alias dotconfig='cd ~/Projects/repos/shell/dotfiles && ./dotf config-files'
+	alias mydf='cd ~/Sites/repos/shell/dotfiles && l' # NAVIGATE TO PROJECT
+	alias cuts='cd ~/Sites/repos/shell/dotfiles && subl . ' # OPEN PROJECT IN SUBLIME TEXT
+	alias dotconfig='cd ~/Sites/repos/shell/dotfiles && ./dotf config-files'
 
 export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 
@@ -117,7 +117,7 @@ export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 # -------------------------------------------------------------------
 # Vagrant aliases
 # -------------------------------------------------------------------
-	alias vms='~/Projects/vms && l'
+	alias vms='~/Sites/vms && l'
 	alias vup='vagrant up'  #start server
 	alias vstop='vagrant halt'  #powerdown the server
 	alias vpause='vagrant suspend' #stop server
