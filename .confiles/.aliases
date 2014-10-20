@@ -23,7 +23,6 @@
 # FORKED REPOS AND OTHER PROJECTS
 	alias sites='~/Projects/client_sites && l'
 	alias repos='~/Projects/repos && l'
-	alias sites='~/Projects/sites && l'
 	alias tests='~/Projects/tests && l'
 	alias labs='~/Projects/labs && l'
 	alias rdm='~/Projects/repos/rainydaymedia && l'
