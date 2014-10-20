@@ -103,7 +103,7 @@ git_dirty() {
 # If inside a Git repository, print its branch and state
 function git_prompt_string() {
   local git_where="$(parse_git_branch)"
-  [ -n "$git_where" ] && echo "%{$FG[239]%}\ue0a0 %{$fg[white]%}${git_where#(refs/heads/|tags/)}$(git_dirty)$(parse_git_state)"
+  [ -n "$git_where" ] && echo "%{$FG[239]%} %{$fg[white]%}${git_where#(refs/heads/|tags/)}$(git_dirty)$(parse_git_state)"
 }
 
 # RVM Stuff
