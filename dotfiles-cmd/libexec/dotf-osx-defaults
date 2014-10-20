@@ -91,7 +91,7 @@ defaults write com.apple.helpviewer DevMode -bool true
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
 # Restart automatically if the computer freezes
-systemsetup -setrestartfreeze on
+sudo systemsetup -setrestartfreeze on
 
 # Never go into computer sleep mode
 # systemsetup -setcomputersleep Off > /dev/null
@@ -527,7 +527,7 @@ defaults write com.twitter.twitter-mac HideInBackground -bool true
 
 for app in "Address Book" "Calendar" "Contacts" "Dashboard" "Dock" "Finder" \
     "Mail" "Safari" "SizeUp" "SystemUIServer" "Terminal" "Transmission" \
-    "Twitter" "iCal" "iTunes"; do
+    "Twitter" "iCal" "iTunes" "Google Chrome"; do
     killall "$app" > /dev/null 2>&1
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
