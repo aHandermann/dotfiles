@@ -41,12 +41,12 @@ end
 
 puts "Installing Cloud Storage Apps"
 system('brew cask install dropbox')
-system('brew cask install copy')
+#system('brew cask install copy')
 system('brew cask install google-drive')
 
 puts "Installing Browsers"
 system('brew cask install google-chrome')
-system('brew cask install google-hangouts')
+#system('brew cask install google-hangouts')
 system('brew cask install firefox')
 system('brew cask install opera')
 
@@ -61,11 +61,11 @@ system('brew cask install todoist')
 system('brew cask install divvy')
 system('brew cask install growlnotify')
 system('brew cask install adobe-creative-cloud')
-system('brew cask install slack')
+#system('brew cask install slack')
 
 puts "Installing Utilities"
 system('brew cask install keka')
-system('brew cask install carbon-copy-cloner')
+#system('brew cask install carbon-copy-cloner')
 system('brew cask install cleanmymac')
 system('brew cask install macpaw-gemini')
 system('brew cask install colorpicker-hex')

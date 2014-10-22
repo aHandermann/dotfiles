@@ -15,9 +15,6 @@ echo
 "$_DOTF_ROOT"/libexec/dotf-fonts
 echo
 
-"$_DOTF_ROOT"/libexec/dotf-osx-defaults
-echo
-
 "$_DOTF_ROOT"/libexec/dotf-zshell
 echo
 
@@ -25,6 +22,9 @@ echo
 echo
 
 "$_DOTF_ROOT"/libexec/dotf-config-files
+echo
+
+"$_DOTF_ROOT"/libexec/dotf-osx-defaults
 echo
 
 "$_DOTF_ROOT"/libexec/dotf-homebrew-apps
