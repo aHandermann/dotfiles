@@ -28,6 +28,8 @@ source $ZSH/oh-my-zsh.sh
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin
 
-# WP CLI to work with MAMP
+# WP CLI to work with MAMP and Completion script
 export MAMP_PHP=/Applications/MAMP/bin/php/php5.6.2/bin
 export PATH="$MAMP_PHP:$PATH"
+
+source ~/.confiles/wp-cli.bash
