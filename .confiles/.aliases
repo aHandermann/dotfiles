@@ -39,8 +39,7 @@
 	alias rdmf='~/Projects/repos/rainydaymedia/RDMFramework && l'
 	alias rdmsh='~/Projects/repos/rainydaymedia/RDMShell && l'
 
-	alias mydf='cd ~/Projects/repos/shell/dotfiles && l' # NAVIGATE TO PROJECT
-	alias cuts='cd ~/Projects/repos/shell/dotfiles && subl . ' # OPEN PROJECT IN SUBLIME TEXT
+	alias cuts='cd ~/Projects/repos/shell/dotfiles' # NAVITGATE TO DOTFILES
 	alias dotconfig='cd ~/Projects/repos/shell/dotfiles && ./dotf config-files'
 
 export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
