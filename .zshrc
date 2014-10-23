@@ -28,6 +28,10 @@ source $ZSH/oh-my-zsh.sh
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin
 
+# Set up MySQL using MAMP
+export MAMP_MYSQL=/Applications/MAMP/Library/bin
+export PATH="$MAMP_MYSQL:$PATH"
+
 # WP CLI to work with MAMP and Completion script
 export MAMP_PHP=/Applications/MAMP/bin/php/php5.6.2/bin
 export PATH="$MAMP_PHP:$PATH"
