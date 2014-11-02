@@ -22,6 +22,7 @@
 
 # FORKED REPOS AND OTHER PROJECTS
 	alias sites='~/Projects/client_sites && l'
+	alias ws='~/Projects/client_sites/wellsprings && l'
 	alias repos='~/Projects/repos && l'
 	alias tests='~/Projects/tests && l'
     alias p='~/Projects && l'
