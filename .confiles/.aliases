@@ -23,10 +23,8 @@
 	alias lamp="curl -L -o 'install.sh' http://bit.ly/1hBfq57 && curl -L -o 'Vagrantfile' http://bit.ly/1mE3Qt9 && vagrant up" # VAGRANT SHORT CUT TO INSTALL A LAMP STACK
 
 # FORKED REPOS AND OTHER PROJECTS
-	alias sites='~/Projects/client_sites && l'
-	alias ws='~/Projects/client_sites/wellsprings && l'
+	alias sites='~/Projects/websites && l'
 	alias repos='~/Projects/repos && l'
-	alias tests='~/Projects/tests && l'
     alias p='~/Projects && l'
 	alias labs='~/Projects/labs && l'
 	alias rdm='~/Projects/repos/rainydaymedia && l'
