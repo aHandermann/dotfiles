@@ -69,7 +69,7 @@
   dt = difftool
   f = fetch --prune
   mt = mergetool
-  psh = push
+  ps = push
   psf = push --force
   pl = pull
   pr = pull-request

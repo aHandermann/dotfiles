@@ -116,7 +116,7 @@ export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 # -------------------------------------------------------------------
 # Vagrant aliases
 # -------------------------------------------------------------------
-	alias vms='~/Sites/vms && l'
+	#alias vms='~/Projects/vms && l'
 	alias vup='vagrant up'  #start server
 	alias vstop='vagrant halt'  #powerdown the server
 	alias vpause='vagrant suspend' #stop server
@@ -131,9 +131,11 @@ export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 # -------------------------------------------------------------------
 # Apache aliases
 # -------------------------------------------------------------------
-	alias serverstart='apachectl -k start'
-	alias serverstop='apachectl -k stop'
-	alias serverboot='apachectl -k restart'
+	alias starta='apachectl -k start'
+	alias stopa='apachectl -k stop'
+	alias restarta='apachectl -k restart'
+	alias rloada='sudo service apache2 reload'
+	alias esites='sudo a2ensite'
 
 # -------------------------------------------------------------------
 # Network Stuff
