@@ -3,19 +3,21 @@
 Based on [Ricky's dotfiles](https://github.com/rickyah/dotfiles) which is in turn is based on [Mathias’s dotfiles](https://github.com/rickyah/dotfiles).
 
 
-### Changes
+### Changes and Mods
 * added [Homebrew Cask](http://caskroom.io/) -- *([GitHub repo](https://github.com/phinze/homebrew-cask))* for easy install of applications with Homebrew.
 	* Vagrant and Virtual Box for example []()
 * added the [rdm2.zsh-theme](https://github.com/edtv82/oh-my-zsh-rdm-theme)
 * added the `install-all_with-apps` to run the Homebrew Cask apps
+      
+			  		Note that this could take a while ;)
 
 ## ToDo
 - [x] add more mysql aliases
 - [x] add php server aliases
-- [ ] update vagrant
+- [x] update vagrant
 - [x] update brew cask script
-- [ ] ~~integrate `gitsh` into workflow.~~ scrapped this idea
-- [ ] better vagrant aliases and functions for wordpress
+- [ ] ~~integrate `gitsh` into workflow.~~ **scrapped this idea**
+- [ ] More functions for wordpress via WP-CLI
 
 ## Installation and Usage
 
@@ -69,7 +71,7 @@ When setting up a new Mac, you may want to install some common Homebrew formulae
 ## Feedback
 
 Suggestions/improvements/pull request
-[welcome](https://github.com/edtv82/dotfiles/pulls)!
+[welcome](https://github.com/ginfuru/dotfiles/pulls)!
 
 ## Thanks to…
 
