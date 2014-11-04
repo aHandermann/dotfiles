@@ -9,7 +9,10 @@ Based on [Ricky's dotfiles](https://github.com/rickyah/dotfiles) which is in tur
 * added the [rdm2.zsh-theme](https://github.com/edtv82/oh-my-zsh-rdm-theme)
 * added the `install-all_with-apps` to run the Homebrew Cask apps
 
-			  		Note that this could take a while ;)
+
+```bash
+Note: this could take a while depending on how many apps you wanna install.
+```
 
 ## ToDo
 - [x] add more mysql aliases
