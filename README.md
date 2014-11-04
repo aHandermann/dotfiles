@@ -5,7 +5,7 @@ Based on [Ricky's dotfiles](https://github.com/rickyah/dotfiles) which is in tur
 
 ### Changes and Mods
 * added [Homebrew Cask](http://caskroom.io/) -- *([GitHub repo](https://github.com/phinze/homebrew-cask))* for easy install of applications with Homebrew.
-	* Vagrant and Virtual Box for example []()
+	* Vagrant and Virtual Box for example
 * added the [rdm2.zsh-theme](https://github.com/edtv82/oh-my-zsh-rdm-theme)
 * added the `install-all_with-apps` to run the Homebrew Cask apps
 
