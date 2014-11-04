@@ -16,6 +16,4 @@ PATH=$HOME/bin:$PATH
 # Usefull for binstubs in rails
 PATH=./bin:$PATH
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 export PATH

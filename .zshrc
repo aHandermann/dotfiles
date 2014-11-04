@@ -23,10 +23,10 @@ for file in ~/.confiles/.*; do
 done
 unset file
 
-source $ZSH/oh-my-zsh.sh
+# rbenv
+eval "$(rbenv init -)"
 
-# Add RVM to PATH for scripting
-PATH=$PATH:$HOME/.rvm/bin
+source $ZSH/oh-my-zsh.sh
 
 ################### MOVED TO 100% VAGRANT ##################
 ## # Set up MySQL using MAMP
