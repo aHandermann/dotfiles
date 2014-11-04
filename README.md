@@ -1,4 +1,4 @@
-## A nice `.dotfiles` setup
+## My personal  `.dotfiles` setup
 
 Based on [Ricky's dotfiles](https://github.com/rickyah/dotfiles) which is in turn is based on [Mathias’s dotfiles](https://github.com/rickyah/dotfiles).
 
@@ -8,7 +8,7 @@ Based on [Ricky's dotfiles](https://github.com/rickyah/dotfiles) which is in tur
 	* Vagrant and Virtual Box for example []()
 * added the [rdm2.zsh-theme](https://github.com/edtv82/oh-my-zsh-rdm-theme)
 * added the `install-all_with-apps` to run the Homebrew Cask apps
-      
+
 			  		Note that this could take a while ;)
 
 ## ToDo
