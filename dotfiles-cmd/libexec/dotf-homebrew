@@ -69,8 +69,8 @@ system('brew install josegonzalez/php/composer')
 system('brew install phpmyadmin')
 system('brew install dnsmasq')
 
-puts "Installing git & git-flow"
-puts "Installing git & git-flow "
+puts "Installing git"
+puts "Installing git-flow-avh"
 system('brew install git')
 system('brew install git-flow-avh')
 
