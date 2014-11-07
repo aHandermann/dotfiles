@@ -17,7 +17,7 @@
 	alias cpssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"' # COPY SSH PUBLIC KEY
 	alias ping='ping -c' # PING WITH PACKET COUNT
 
-	alias st3='cd /Users/ginfuru/Library/Application\ Support/Sublime\ Text\ 3' # SAVING MY ENTIRE SUBLIME SETUP
+	alias st3='cd /d ~/Dropbox\ \(Personal\)/Apps/SublimeText/sublime-text-settings' # SAVING MY ENTIRE SUBLIME SETUP
 	alias hostfile='subl /Volumes/yogi/private/etc/hosts' # HOST FILE MODS
 
 	alias lamp="curl -L -o 'install.sh' http://bit.ly/1hBfq57 && curl -L -o 'Vagrantfile' http://bit.ly/1mE3Qt9 && vagrant up" # VAGRANT SHORT CUT TO INSTALL A LAMP STACK
