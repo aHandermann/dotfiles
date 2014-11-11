@@ -1,6 +1,6 @@
 # RDM2 theme by Ed Heltzel (http://rainydaymedia.net)
 # Use with a iterm 2 - kitkat color scheme (https://github.com/zdj/themes)
-# Regular Font - 12pt Inconsolata for Powerline Non-ASCII Font - 12pt Menlo Regular for Powerline
+# Regular Font - 12pt ouce Code Powerline Non-ASCII Font - 12pt Souce Code Pro
 # Meant for those who use rvm, rbenv and git, mercurial
 
 # You can set your computer name in the ~/.box-name file if you want.
