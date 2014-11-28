@@ -1,0 +1,3 @@
+[submodule "themes/oh-my-zsh-poncho"]
+	path = themes/oh-my-zsh-poncho
+	url = git@github.com:RainyDayMedia/oh-my-zsh-poncho.git
