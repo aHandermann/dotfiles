@@ -18,8 +18,6 @@
 	alias ping='ping -c' # PING WITH PACKET COUNT
 
 	alias sites='~/Projects/websites && l'
-	alias baldwin='~/Projects/baldwin && l'
-	alias cement='~/Projects/cement && l'
 	alias st3='cd ~/Dropbox\ \(Personal\)/Apps/SublimeText/sublime-text-settings' # SAVING MY ENTIRE SUBLIME SETUP
 	alias hostfile='subl /Volumes/yogi/private/etc/hosts' # HOST FILE MODS
 
