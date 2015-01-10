@@ -98,6 +98,9 @@ system('brew install macvim')
 puts "Installing tidy"
 system('brew install tidy')
 
+puts "Installing ack"
+system('brew install ack')
+
 puts "Install brew-casks"
 system('brew install caskroom/cask/brew-cask')
 
