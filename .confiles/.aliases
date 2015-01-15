@@ -32,9 +32,9 @@
 
 # VENTURES
 	alias static='~/Projects/repos/static && l' # THEME MARKET STUFF
-	alias wordpress='~/Projects/repos/wordpress && l'
-	alias wpth='~/Projects/repos/wordpress/themes && l' # THEME MARKET STUFF
-	alias wppl='~/Projects/repos/wordpress/plugins && l'
+	alias wps='~/Projects/repos/wordpress && l'
+	alias wpt='~/Projects/repos/wordpress/themes && l' # THEME MARKET STUFF
+	alias wpp='~/Projects/repos/wordpress/plugins && l'
 
 # RDM BUILDs
 	alias myz='cd ~/Projects/repos/shell/omz/oh-my-zsh-rdm-theme && l && subl .'  # OPEN REPO IN SUBLIME TEXT
