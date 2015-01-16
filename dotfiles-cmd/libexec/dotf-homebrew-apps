@@ -59,12 +59,12 @@ system('brew cask install dash')
 system('brew cask install fantastical')
 system('brew cask install todoist')
 system('brew cask install divvy')
-system('brew cask install growlnotify')
+# system('brew cask install growlnotify')
 system('brew cask install adobe-creative-cloud')
-#system('brew cask install slack')
+system('brew cask install slack')
 
 puts "Installing Utilities"
-system('brew cask install keka')
+#system('brew cask install keka') # using the OS X defautl again
 #system('brew cask install carbon-copy-cloner')
 system('brew cask install cleanmymac')
 system('brew cask install macpaw-gemini')
@@ -76,7 +76,6 @@ system('brew cask install namechanger')
 system('brew cask install bartender')
 
 puts "Installing Video Utilities and Spotify"
-system('brew cask install quickcast')
 system('brew cask install spotify')
 system('brew cask install vlc')
 system('brew cask install handbrake')
@@ -94,7 +93,6 @@ system('brew cask install mou')
 system('brew cask install sequel-pro')
 system('brew cask install kaleidoscope')
 system('brew cask install mindnode-pro')
-system('brew cask install gitifier')
 system('brew cask install mamp')
 
 puts "Checking with the DR"
