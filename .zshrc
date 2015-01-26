@@ -1,7 +1,7 @@
 # OH-MY-ZSH SETUP
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="the_poncho"
+ZSH_THEME="robbyrussell"
 
 export UPDATE_ZSH_DAYS=1
 
@@ -13,6 +13,8 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # plugins=(brew bundle colorize fasd gem node npm vagrant battery)
 plugins=(bundle colorize fasd gem node npm battery) # FOR THE JUST A LITTLE WHILE
+
+RPROMPT='$(battery_pct_prompt)%{$reset_color%}'
 
 # register homebrew completions folder
 fpath=('/usr/local/share/zsh/site-functions/' $fpath)
