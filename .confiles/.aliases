@@ -4,6 +4,7 @@
 	alias cl='clear'
 	alias cll='clear && l'
 	alias del='rm -Rf'
+	alias tmuxdr='tmuxinator doctor'
 
 	alias dropbox='cd ~/Dropbox\ \(Rainy\ Day\ Media\)' # DROPBOX FOR BUSINESS
 	alias dropboxp='cd ~/Dropbox\ \(Personal\)' # PERSONAL DROPBOX
