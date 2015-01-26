@@ -45,6 +45,8 @@ fuction brewup(){
 	brew cleanup
 	echo -e "$fg_bold[cyan] $DR_HOMEBREW $reset_color"
 	brew doctor
+	echo -e "...........Getting the latest Vim Stuff"
+	cd ~/.vim_runtime && git pull --rebase
 }
 
 # -------------------------------------------------------------------
