@@ -23,6 +23,8 @@ for file in ~/.confiles/.*; do
 done
 unset file
 
+#tmuxinator
+ source ~/.bin/tumxinator.zsh
 # rbenv
 eval "$(rbenv init -)"
 
