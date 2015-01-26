@@ -24,7 +24,7 @@ done
 unset file
 
 #tmuxinator
- source ~/.bin/tumxinator.zsh
+ #source ~/.bin/tumxinator.zsh
 # rbenv
 eval "$(rbenv init -)"
 
