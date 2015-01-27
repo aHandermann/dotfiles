@@ -23,8 +23,6 @@ function update() {
 	brew cleanup
 	echo -e "$fg_bold[cyan] $DR_HOMEBREW $reset_color"
 	brew doctor
-	echo -e "$fg_bold[cyan] ...........Re-Installing NeoVim $reset_color"
-	brew reinstall --HEAD neovim
 	echo -e "$fg_bold[cyan] ...........Getting the latest Vim Stuff $reset_color"
 	cd ~/.vim_runtime && git pull --rebase && cd ~/
 	echo -e "$fg_bold[cyan] $NPM_PACKAGE_UPDATE $reset_color"
@@ -49,8 +47,6 @@ fuction brewup(){
 	brew cleanup
 	echo -e "$fg_bold[cyan] $DR_HOMEBREW $reset_color"
 	brew doctor
-	echo -e "$fg_bold[cyan] ...........Re-Installing NeoVim $reset_color"
-	brew reinstall --HEAD neovim
 	echo -e "$fg_bold[cyan] ...........Getting the latest Vim Stuff $reset_color"
 	cd ~/.vim_runtime && git pull --rebase && cd ~/
 }
