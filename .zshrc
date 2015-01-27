@@ -1,7 +1,7 @@
 # OH-MY-ZSH SETUP
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 export UPDATE_ZSH_DAYS=1
 
