@@ -45,7 +45,7 @@ fuction brewup(){
 	brew cleanup
 	echo -e "$fg_bold[cyan] $DR_HOMEBREW $reset_color"
 	brew doctor
-
+}
 # -------------------------------------------------------------------
 # Simple calculator
 # -------------------------------------------------------------------
