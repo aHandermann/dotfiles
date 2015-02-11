@@ -23,16 +23,16 @@ function update() {
 	brew cleanup
 	echo -e "$fg_bold[cyan] $DR_HOMEBREW $reset_color"
 	brew doctor
-	echo -e "$fg_bold[cyan] $NPM_PACKAGE_UPDATE $reset_color"
-	npm update -g
 	echo -e "$fg_bold[cyan] $NPM_UPDATE $reset_color"
 	npm update npm -g
+	echo -e "$fg_bold[cyan] $NPM_PACKAGE_UPDATE $reset_color"
+	npm update -g
 	echo -e "$fg_bold[cyan] $UPDATE_RVM $reset_color"
-	gem update --system
+	sudo gem update --system
 	echo -e "$fg_bold[cyan] $UPDATE_GEMS $reset_color"
-	gem update
+	sudo gem update
 	echo -e "$fg_bold[cyan] $UPDATE_GEMS_CLEANUP $reset_color"
-	gem cleanup
+	sudo gem cleanup
 }
 
 # UPDATE HOMEBREW ONLY
