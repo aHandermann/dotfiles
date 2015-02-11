@@ -21,7 +21,7 @@
 	alias sites='~/Projects/websites && l'
 	alias st3='cd ~/Dropbox\ \(Personal\)/Apps/SublimeText/sublime-text-settings' # SAVING MY ENTIRE SUBLIME SETUP
 	alias hostfile='subl /Volumes/yogi/private/etc/hosts' # HOST FILE MODS
-    alias vhostifle='vim /Volumes/yogi/private/etc/hosts'
+    alias vhostifle='vim /Volumes/yogi/private/etc/hosts' # OPEN HOST FILE IN VIM
 	alias lamp="curl -L -o 'install.sh' http://bit.ly/1hBfq57 && curl -L -o 'Vagrantfile' http://bit.ly/1mE3Qt9 && vagrant up" # VAGRANT SHORT CUT TO INSTALL A LAMP STACK
 
 # FORKED REPOS AND OTHER PROJECTS
@@ -38,11 +38,12 @@
 	alias wpp='~/Projects/repos/wordpress/plugins && l'
 
 # RDM BUILDs
-	alias myz='cd ~/Projects/repos/shell/omz/oh-my-zsh-rdm-theme && l && subl .'  # OPEN REPO IN SUBLIME TEXT
+	alias myz='~/Projects/repos/shell/omz/oh-my-zsh-rdm-theme && l && subl .'  # OPEN REPO IN SUBLIME TEXT
 	alias rdmf='~/Projects/repos/rainydaymedia/RDMFramework && l'
-	alias rdmsh='~/Projects/repos/rainydaymedia/RDMShell && l'
-
-	alias cuts='cd ~/Projects/repos/shell/dotfiles' # NAVITGATE TO DOTFILES
+	alias rdms='~/Projects/repos/rainydaymedia/RDMShell && l'
+	alias rdmg='~/Projects/repos//rainydaymedia/ && l'
+	alias cuts='~/Projects/repos/shell/dotfiles' # NAVITGATE TO DOTFILES
+	alias handbook='~/Projects/websites/ && l' # OPEN RDM HANDBOOK
 	alias dotconfig='cd ~/Projects/repos/shell/dotfiles && ./dotf config-files'
 
 export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
