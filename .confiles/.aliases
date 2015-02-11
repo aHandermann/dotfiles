@@ -42,7 +42,7 @@
 	alias myz='~/Projects/repos/shell/omz/oh-my-zsh-rdm-theme && l && subl .'  # OPEN REPO IN SUBLIME TEXT
 	alias rdmf='~/Projects/repos/rainydaymedia/RDMFramework && l'
 	alias rdms='~/Projects/repos/rainydaymedia/RDMShell && l'
-	alias rdmg='~/Projects/repos//rainydaymedia/ && l'
+	alias rdmg='~/Projects/repos/rainydaymedia/rdmgumbyshell/ && l'
 	alias cuts='~/Projects/repos/shell/dotfiles' # NAVITGATE TO DOTFILES
 	alias handbook='~/Projects/websites/ && l' # OPEN RDM HANDBOOK
 	alias dotconfig='cd ~/Projects/repos/shell/dotfiles && ./dotf config-files'
@@ -159,7 +159,7 @@ alias aproff='apachectl -k stop'
 alias apres='apachectl -k restart'
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-# alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update'
 
 # hub tool
 # alias git='hub'
