@@ -116,6 +116,9 @@ system('brew doctor')
 puts "Removing outdated versions from the cellar"
 system('brew cleanup')
 
+puts "Installing nvm"
+system('brew install nvm')
+
 puts "Installing node with npm"
 system('brew install node')
 
