@@ -3,7 +3,7 @@ ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="miloshadzic"
 
-export UPDATE_ZSH_DAYS=5
+export UPDATE_ZSH_DAYS=1
 
 DISABLE_CORRECTION="true"
 
