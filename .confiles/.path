@@ -3,7 +3,7 @@ PATH=/usr/local/sbin:usr/local/lib:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:
 
 
 # nvm
-PATH=$PATH:$(brew --prefix nvm)/nvm.sh
+#PATH=$PATH:$(brew --prefix nvm)/nvm.sh
 
 # node
 PATH=$PATH:$(npm config get prefix)/bin
