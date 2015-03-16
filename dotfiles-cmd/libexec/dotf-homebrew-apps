@@ -10,7 +10,7 @@ doUpgrade = (ARGV.include?('--upgrade') || ARGV.include?('-u'))
 
 app_name = "Homebrew"
 app_cmd = "brew"
-app_install_cmd = 'ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+app_install_cmd = 'ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"'
 check_app_installation = `type $app_cmd &>/dev/null`.empty?
 
 puts "---------------------------------------------------------------------------------"
