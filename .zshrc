@@ -11,14 +11,10 @@ COMPLETION_WAITING_DOTS="true"
 
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-<<<<<<< HEAD
 # plugins=(brew bundle colorize fasd gem node npm vagrant battery)
-plugins=(bundle colorize fasd gem node npm battery) # FOR THE JUST A LITTLE WHILE
+plugins=(battery colorize fasd node npm osx) # FOR JUST A LITTLE WHILE
 
 RPROMPT='$(battery_pct_prompt)%{$reset_color%}'
-=======
-plugins=(battery brew bundle colorize fasd gem svn gitfast jira node npm osx pod thor vagrant zeus)
->>>>>>> upstream/master
 
 # register homebrew completions folder
 fpath=('/usr/local/share/zsh/site-functions/' $fpath)

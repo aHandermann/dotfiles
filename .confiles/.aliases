@@ -23,7 +23,7 @@
 	alias st3='cd ~/Dropbox\ \(Personal\)/Apps/SublimeText/sublime-text-settings' # SAVING MY ENTIRE SUBLIME SETUP
 	alias hostfile='subl /Volumes/yogi/private/etc/hosts' # HOST FILE MODS
     alias vhostifle='vim /Volumes/yogi/private/etc/hosts' # OPEN HOST FILE IN VIM
-	alias lamp="curl -L -o 'install.sh' http://bit.ly/1hBfq57 && curl -L -o 'Vagrantfile' http://bit.ly/1mE3Qt9 && vagrant up" # VAGRANT SHORT CUT TO INSTALL A LAMP STACK
+	#alias lamp="curl -L -o 'install.sh' http://bit.ly/1hBfq57 && curl -L -o 'Vagrantfile' http://bit.ly/1mE3Qt9 && vagrant up" # VAGRANT SHORT CUT TO INSTALL A LAMP STACK
 
 # FORKED REPOS AND OTHER PROJECTS
 	alias repos='~/Projects/repos && l'
@@ -40,12 +40,10 @@
 
 # RDM BUILDs
 	alias myz='~/Projects/repos/shell/omz/oh-my-zsh-rdm-theme && l && subl .'  # OPEN REPO IN SUBLIME TEXT
-	alias rdmf='~/Projects/repos/rainydaymedia/RDMFramework && l'
 	alias rdms='~/Projects/repos/rainydaymedia/RDMShell && l'
 	alias rdmg='~/Projects/repos/rainydaymedia/rdmgumbyshell/ && l'
 	alias cuts='~/Projects/repos/shell/dotfiles' # NAVITGATE TO DOTFILES
-	alias handbook='~/Projects/websites/ && l' # OPEN RDM HANDBOOK
-	alias dotconfig='cd ~/Projects/repos/shell/dotfiles && ./dotf config-files'
+	#alias handbook='~/Projects/websites/ && l' # OPEN RDM HANDBOOK
 
 export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 
@@ -55,6 +53,7 @@ export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 # -------------------------------------------------------------------
 
 	alias brews='brew list -1'
+	alias bubu="brew update && brew upgrade && brew cleanup"
 
 # -------------------------------------------------------------------
 # Git aliases Most used in my current worflow

@@ -56,9 +56,7 @@
   whitespace = fix
 
 [alias]
-<<<<<<< HEAD
   aa = add --all
-=======
   # checkouts
   co = checkout
   cb = checkout -b
@@ -68,27 +66,14 @@
   # submodules
   sm = "!f() { git submodule update --init --recursive $1; }; f"
   #branch management
->>>>>>> upstream/master
   b = branch
   ba = branch -a
   bd = branch -d
   bD = branch -D
   bm = branch -m
-  c = commit
-  cm = commit -m
-  cma = commit -am
-  co = checkout
-  cb = checkout -b
-  ct = checkout -t
-  cr = checkout --
   d = diff
   dt = difftool
-  f = fetch --prune
   mt = mergetool
-  p = push
-  pf = push --force
-  pl = pull
-  pr = pull-request
   r = rebase
   re = remote
   rea = remote -v
@@ -102,21 +87,14 @@
   sq = "!f() { git rebase -i HEAD~$1; }; f"
   # tags
   t = tag -l
-<<<<<<< HEAD
-  s = status -s
-  ss = status
   squash = "!f() { git rebase -i HEAD~$1; }; f"
-=======
   # stashes
->>>>>>> upstream/master
   st = stash
   stl = stash list
   stp = stash pop
   sts = "!f() { git stash show stash@{$1}; }; f"
   std = "!f() { git stash show stash@{$1} -U5; }; f"
   strm = "!f() { git stash drop stash@{$1} -U5; }; f"
-<<<<<<< HEAD
-=======
   #commits
   c = commit
   cm = commit -m
@@ -126,10 +104,10 @@
   ps = push
   pl = pull
   pr = pull-request
+  pf = push --force
   # status & log
   s = status -s
   ss = status
->>>>>>> upstream/master
   l = "!f() { git log $1 --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit; }; f"
   lg = "!f() { git log $1 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit;};f"
   # show tracked branches
