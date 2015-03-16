@@ -24,8 +24,8 @@ echo
 "$_DOTF_ROOT"/libexec/dotf-config-files
 echo
 
-"$_DOTF_ROOT"/libexec/dotf-osx-defaults
+"$_DOTF_ROOT"/libexec/dotf-homebrew-apps
 echo
 
-"$_DOTF_ROOT"/libexec/dotf-homebrew-apps
+"$_DOTF_ROOT"/libexec/dotf-osx-defaults
 echo

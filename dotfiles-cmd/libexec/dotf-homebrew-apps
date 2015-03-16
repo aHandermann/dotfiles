@@ -59,9 +59,10 @@ system('brew cask install dash')
 system('brew cask install fantastical')
 system('brew cask install todoist')
 system('brew cask install divvy')
-# system('brew cask install growlnotify')
+system('brew cask install cloudytabs')
 system('brew cask install adobe-creative-cloud')
 system('brew cask install slack')
+system('brew cask install macaw')
 
 puts "Installing Utilities"
 #system('brew cask install keka') # using the OS X defautl again
@@ -74,6 +75,11 @@ system('brew cask install colorpicker-skalacolor')
 system('brew cask install sitesucker')
 system('brew cask install namechanger')
 system('brew cask install bartender')
+system('brew cask install imageoptim')
+system('brew cask install joinme')
+system('brew cask install karabiner')
+system('brew cask install seil')
+system('brew cask install recordit')
 
 puts "Installing Video Utilities and Spotify"
 system('brew cask install spotify')
@@ -85,8 +91,7 @@ puts "Installing Development Tools"
 system('brew cask install iterm2')
 system('brew cask install sublime-text')
 system('brew cask install transmit')
-system('brew cask install vagrant')
-system('brew cask install virtualbox')
+system('brew cask install coda')
 system('brew cask install codekit')
 system('brew cask install github')
 system('brew cask install mou')
@@ -101,16 +106,13 @@ system('brew doctor')
 puts "Removing outdated versions from the cellar"
 system('brew cleanup')
 
-puts "Installing node"
-system('brew install node --without-npm')
-
-puts "Installing NPM"
-system('curl -L https://npmjs.org/install.sh | sh')
-
 if (doUpgrade)
     puts "Upgrading already-installed formulae"
     system('brew upgrade')
 end
+
+puts "Installing node"
+system('brew install node')
 
 puts "Done"
 puts "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
