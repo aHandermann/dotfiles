@@ -64,7 +64,7 @@ system('brew install homebrew/dupes/screen')
 
 puts "Installing more recent versions of PHP and Composer"
 system('brew tap josegonzalez/php')
-system('brew install php55 --with-gmp')
+system('brew install php56 --with-gmp')
 system('brew install josegonzalez/php/composer')
 system('brew install phpmyadmin')
 system('brew install dnsmasq')
@@ -110,20 +110,11 @@ system('brew install legit')
 puts "Activate Legit"
 system('legit install')
 
-puts "Checking with the DR"
-system('brew doctor')
-
-puts "Removing outdated versions from the cellar"
-system('brew cleanup')
-
-puts "Installing nvm"
-system('brew install nvm')
-
 puts "Installing node with npm"
 system('brew install node')
 
-puts "Installing NPM"
-system('curl -L https://npmjs.org/install.sh | sh')
+puts "Removing outdated versions from the cellar"
+system('brew cleanup')
 
 if (doUpgrade)
     puts "Upgrading already-installed formulae"
