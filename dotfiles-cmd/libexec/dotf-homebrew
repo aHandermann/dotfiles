@@ -12,7 +12,7 @@ app_name = "Homebrew"
 app_cmd = "brew"
 app_install_cmd = 'ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 '
-check_app_installation = `type $app_cmd &>/dev/null`.empty?
+check_app_installation = 'type $app_cmd &>/dev/null'.empty?
 
 puts "---------------------------------------------------------------------------------"
 puts "This script installs #{app_name} if it is not installed"
