@@ -10,7 +10,6 @@ DISABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
 # plugins=(brew bundle colorize fasd gem node npm vagrant battery)
 plugins=(battery colorize fasd node npm osx) # FOR JUST A LITTLE WHILE
 
