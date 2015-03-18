@@ -3,7 +3,7 @@ ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="the_poncho"
 
-export UPDATE_ZSH_DAYS=1
+export UPDATE_ZSH_DAYS=10
 
 DISABLE_CORRECTION="true"
 
