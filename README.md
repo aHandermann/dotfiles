@@ -19,16 +19,19 @@ Note: this could take a while depending on how many apps you wanna install.
 - [x] add php server aliases
 - [x] update vagrant
 - [x] update brew cask script
-- [ ] ~~integrate `gitsh` into workflow.~~ **scrapped this idea**
-- [ ] More functions for wordpress via WP-CLI
+- [x] add .extra for custom stuff 
 
 ## Installation and Usage
 
-### Using Git and the dotf script
+### Using Git to install and the dotf script
 
-You can clone the repository wherever you want, I keep mine in`~/Projects/Repos/dotfiles`. The `dotf` script will copy the files to your home folder.
+You can clone the repository wherever you want, I keep mine in`~/Projects/Repos/dotfiles`. The `dotf` script will copy the files to your home folder _(you could also symlink -- but you'll have to source each time you might make a change)_
 
-Go to Terminal and run ☞ `git clone https://github.com/edtv82/dotfiles`
+Go to Terminal and run ☟ 
+
+```bash 
+git clone https://github.com/ginfuru/dotfiles
+````
 
 then `cd ~/YOUR_PATH/dotfiles`and run ☞ `./dotf`
 
