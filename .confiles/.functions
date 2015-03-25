@@ -72,7 +72,7 @@ function wpinstall(){
 	echo -e "$fg_bold[red]---------------------------------------------------------------------------------$reset_color"
 	curl https://api.wordpress.org/secret-key/1.1/salt/ | pbcopy;
 	/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -b . && open . && subl wp-config.php;
-		echo -e "$fg_bold[red]---------------------------------------------------------------------------------"
+	echo -e "$fg_bold[red]---------------------------------------------------------------------------------"
 	echo -e "$fg_bold[red] Lets get to hacking!"
 	echo -e "$fg_bold[red]---------------------------------------------------------------------------------$reset_color"
 }
