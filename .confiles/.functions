@@ -36,7 +36,7 @@ function update() {
 }
 
 # UPDATE HOMEBREW ONLY
-fuction brewup(){
+function brewup(){
 	echo -e "$fg_bold[cyan] $UPDATE_HOMEBREW $reset_color"
 	brew update
 	echo -e "$fg_bold[cyan] $UPGRADE_HOMEBREW $reset_color"
@@ -46,6 +46,37 @@ fuction brewup(){
 	echo -e "$fg_bold[cyan] $DR_HOMEBREW $reset_color"
 	brew doctor
 }
+
+# -------------------------------------------------------------------
+# Wordpress
+# -------------------------------------------------------------------
+function wpinstall(){
+
+	echo -e "$fg_bold[yellow]---------------------------------------------------------------------------------"
+	echo -e "$fg_bold[yellow] Creating the Project"
+	echo -e "$fg_bold[yellow]---------------------------------------------------------------------------------$reset_color"
+	mkdir -p ~/Projects/websites/"$@" && cd ~/Projects/websites/"$@"
+	echo -e "$fg_bold[yellow]---------------------------------------------------------------------------------"
+	echo -e "$fg_bold[yellow] Downloading WordPress from the cloud"
+	echo -e "$fg_bold[yellow]---------------------------------------------------------------------------------$reset_color"
+	wget --show-progress http://wordpress.org/latest.zip .;
+	echo -e "$fg_bold[yellow]---------------------------------------------------------------------------------"
+	echo -e "$fg_bold[yellow] Setting up the Project!"
+	echo -e "$fg_bold[yellow]---------------------------------------------------------------------------------$reset_color"
+	unzip latest.zip;
+	mv wordpress/* .;
+	rm -rf wordpress latest.zip readme.html license.txt xmlrpc.php;
+	mv wp-config-sample.php wp-config.php;
+	echo -e "$fg_bold[red]---------------------------------------------------------------------------------"
+	echo -e "$fg_bold[red] Salts Copied to Clipboard!"
+	echo -e "$fg_bold[red]---------------------------------------------------------------------------------$reset_color"
+	curl https://api.wordpress.org/secret-key/1.1/salt/ | pbcopy;
+	/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -b . && open . && subl wp-config.php;
+		echo -e "$fg_bold[red]---------------------------------------------------------------------------------"
+	echo -e "$fg_bold[red] Lets get to hacking!"
+	echo -e "$fg_bold[red]---------------------------------------------------------------------------------$reset_color"
+}
+
 # -------------------------------------------------------------------
 # Simple calculator
 # -------------------------------------------------------------------
