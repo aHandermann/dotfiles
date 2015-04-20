@@ -13,6 +13,7 @@ PATH=$(brew --prefix)/bin:$(brew --prefix)/sbin:$(brew --prefix coreutils)/libex
 
 # Add `~/bin` to the `$PATH`
 PATH=$HOME/bin:$PATH
+PATH=$PATH:/Applications/MAMP/Library/bin
 
 # If there is bin folder in the current location, it takes preference
 # Usefull for binstubs in rails
