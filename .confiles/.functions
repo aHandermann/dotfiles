@@ -67,9 +67,9 @@ function wpinstall(){
 	mv wordpress/* .;
 	rm -rf wordpress latest.zip readme.html license.txt xmlrpc.php;
 	mv wp-config-sample.php wp-config.php;
-	echo -e "$fg_bold[yellow]---------------------------------------------------------------------------------"
-	echo -e "$fg_bold[yellow] DATABASE$reset_color $fg_bold[green]"$@"$rest_color $fg_bold[yellow]CREATED"
-	echo -e "$fg_bold[yellow]---------------------------------------------------------------------------------$reset_color"
+	echo -e "$fg_bold[blue]---------------------------------------------------------------------------------"
+	echo -e "$fg_bold[blue] DATABASE$reset_color $fg_bold[yellow]"$@"$rest_color $fg_bold[blue]CREATED"
+	echo -e "$fg_bold[blue]---------------------------------------------------------------------------------$reset_color"
 	mysqladmin -uroot -proot CREATE "$@";
 	echo -e "$fg_bold[red]---------------------------------------------------------------------------------"
 	echo -e "$fg_bold[red] Salts Copied to Clipboard!"
@@ -77,7 +77,7 @@ function wpinstall(){
 	curl https://api.wordpress.org/secret-key/1.1/salt/ | pbcopy;
 	/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -b . && open . && subl wp-config.php;
 	echo -e "$fg_bold[red]---------------------------------------------------------------------------------"
-	echo -e "$fg_bold[red] Lets get to hacking!"
+	echo -e "$fg_bold[red] Happy hacking!"
 	echo -e "$fg_bold[red]---------------------------------------------------------------------------------$reset_color"
 }
 
