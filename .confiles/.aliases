@@ -20,6 +20,7 @@
 	alias ping='ping -c' # PING WITH PACKET COUNT
 
 	alias sites='~/Projects/websites && l'
+	alias dploy='~/Projects/ && l'
 	alias st3='cd ~/Dropbox\ \(Personal\)/Apps/SublimeText/sublime-text-settings' # SAVING MY ENTIRE SUBLIME SETUP
 	alias hostfile='subl /Volumes/rdm/private/etc/hosts' # HOST FILE MODS
     alias vhostifle='vim /Volumes/rdm/private/etc/hosts' # OPEN HOST FILE IN VIM
