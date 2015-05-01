@@ -25,7 +25,7 @@ done
 unset file
 
 # rbenv
-eval "$(rbenv init -)"
+eval "$(rbenv init - --no-rehash)"
 
 source $ZSH/oh-my-zsh.sh
 zstyle :omz:plugins:ssh-agent agent-forwarding on
