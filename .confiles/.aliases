@@ -19,7 +19,7 @@
 	alias cpssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"' # COPY SSH PUBLIC KEY
 	alias ping='ping -c' # PING WITH PACKET COUNT
 
-	alias sites='~/Projects/websites && l'
+	alias sites='~/Sites && l'
 	alias dploy='~/Projects/ && l'
 	alias st3='cd ~/Dropbox\ \(Personal\)/Apps/SublimeText/sublime-text-settings' # SAVING MY ENTIRE SUBLIME SETUP
 	alias hostfile='subl /Volumes/rdm/private/etc/hosts' # HOST FILE MODS
@@ -43,7 +43,7 @@
 	alias rdms='~/Projects/repos/rainydaymedia/RDMShell && l'
 	alias rdmg='~/Projects/repos/rainydaymedia/rdmgumbyshell/ && l'
 	alias cuts='~/Projects/repos/shell/dotfiles' # NAVITGATE TO DOTFILES
-	#alias handbook='~/Projects/websites/ && l' # OPEN RDM HANDBOOK
+	#alias handbook='~/Sites/handbook/ && l' # OPEN RDM HANDBOOK
 
 export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 
