@@ -55,7 +55,7 @@ function wpinstall(){
 	echo -e "$fg_bold[yellow]---------------------------------------------------------------------------------"
 	echo -e "$fg_bold[yellow] Creating the Project"
 	echo -e "$fg_bold[yellow]---------------------------------------------------------------------------------$reset_color"
-	mkdir -p ~/Projects/websites/"$@" && cd ~/Projects/websites/"$@"
+	mkdir -p ~/Sites/"$@" && cd ~/Sites/"$@"
 	echo -e "$fg_bold[yellow]---------------------------------------------------------------------------------"
 	echo -e "$fg_bold[yellow] Downloading WordPress from the cloud"
 	echo -e "$fg_bold[yellow]---------------------------------------------------------------------------------$reset_color"
