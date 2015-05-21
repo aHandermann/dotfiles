@@ -132,6 +132,10 @@ function fs() {
 	fi
 }
 
+function flush() {
+	sudo discoveryutil udnsflushcaches;
+}
+
 # -------------------------------------------------------------------
 # compressed file expander
 # (from https://github.com/myfreeweb/zshuery/blob/master/zshuery.sh)
