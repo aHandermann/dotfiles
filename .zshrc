@@ -1,7 +1,7 @@
 # OH-MY-ZSH SETUP
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="the_poncho"
+ZSH_THEME="dracula"
 
 export UPDATE_ZSH_DAYS=1
 
