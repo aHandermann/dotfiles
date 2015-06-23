@@ -12,7 +12,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # plugins=(brew bundle colorize fasd gem node npm vagrant battery)
 
-plugins=(battery tmuxinator colorize fasd node npm osx ssh-agent) # FOR JUST A LITTLE WHILE
+plugins=(battery colorize fasd osx ssh-agent autojump) # FOR JUST A LITTLE WHILE
 
 RPROMPT='$(battery_pct_prompt)%{$reset_color%}'
 
