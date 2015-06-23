@@ -31,3 +31,6 @@ eval "$(rbenv init - --no-rehash)"
 
 source $ZSH/oh-my-zsh.sh
 zstyle :omz:plugins:ssh-agent agent-forwarding on
+
+# added by travis gem
+[ -f /Users/ed/.travis/travis.sh ] && source /Users/ed/.travis/travis.sh
