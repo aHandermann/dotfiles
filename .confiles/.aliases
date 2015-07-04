@@ -11,8 +11,8 @@
 	alias gdrive='cd ~/Google\ Drive' # GOOGLE DRIVE
 	alias clients='cd ~/Google\ Drive/Opportunities/Clients' # CLIENTS IN GOOGLE DRIVE
 
-	alias mypath='subl ~/Projects/repos/shell/dotfiles/.confiles/.path'
-	alias expath='subl ~/Projects/repos/shell/dotfiles/.confiles/.exports'
+	alias mypath='subl ~/Projects/shell/dotfiles/.confiles/.path'
+	alias expath='subl ~/Projects/shell/dotfiles/.confiles/.exports'
 	alias profile='subl ~/.zshrc'
 	alias editssh='subl ~/.ssh/known_hosts' # EDIT SSH HOSTS
 	alias cpssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"' # COPY SSH PUBLIC KEY
@@ -26,22 +26,22 @@
 	#alias lamp="curl -L -o 'install.sh' http://bit.ly/1hBfq57 && curl -L -o 'Vagrantfile' http://bit.ly/1mE3Qt9 && vagrant up" # VAGRANT SHORT CUT TO INSTALL A LAMP STACK
 
 # FORKED REPOS AND OTHER PROJECTS
-	alias repos='~/Projects/repos && l'
+	alias repos='~/Projects && l'
     alias p='~/Projects && l'
 	alias labs='~/Projects/labs && l'
-	alias cssf='~/Projects/repos/static/cssFW && l'
+	alias cssf='~/Projects/static/cssFW && l'
 
 # VENTURES
-	alias static='~/Projects/repos/static && l' # THEME MARKET STUFF
-	alias wps='~/Projects/repos/wordpress && l'
-	alias wpt='~/Projects/repos/wordpress/themes && l' # THEME MARKET STUFF
-	alias wpp='~/Projects/repos/wordpress/plugins && l'
+	alias static='~/Projects/static && l' # THEME MARKET STUFF
+	alias wps='~/Projects/wordpress && l'
+	alias wpt='~/Projects/wordpress/themes && l' # THEME MARKET STUFF
+	alias wpp='~/Projects/wordpress/plugins && l'
 
 # RDM BUILDs
-	alias myz='~/Projects/repos/shell/omz/oh-my-zsh-rdm-theme && l && subl .'  # OPEN REPO IN SUBLIME TEXT
-	alias rdms='~/Projects/repos/rainydaymedia/RDMShell && l'
-	alias rdmg='~/Projects/repos/rainydaymedia/rdmgumbyshell/ && l'
-	alias cuts='~/Projects/repos/shell/dotfiles' # NAVITGATE TO DOTFILES
+	alias myz='~/Projects/shell/omz/oh-my-zsh-rdm-theme && l && subl .'  # OPEN REPO IN SUBLIME TEXT
+	alias rdms='~/Projects/rainydaymedia/RDMShell && l'
+	alias rdmg='~/Projects/rainydaymedia/rdmgumbyshell/ && l'
+	alias cuts='~/Projects/shell/dotfiles' # NAVITGATE TO DOTFILES
 	#alias handbook='~/Sites/handbook/ && l' # OPEN RDM HANDBOOK
 
 export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
