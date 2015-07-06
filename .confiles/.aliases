@@ -5,6 +5,7 @@
 	alias cll='clear && l'
 	alias del='rm -Rf'
 	alias tkill='tmux kill-session -t'
+	alias zup='upgrade_oh_my_zsh'
 
 	alias dropbox='cd ~/Dropbox\ \(Rainy\ Day\ Media\)' # DROPBOX FOR BUSINESS
 	alias dropboxp='cd ~/Dropbox\ \(Personal\)' # PERSONAL DROPBOX
