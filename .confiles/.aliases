@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------
 	alias cl='clear'
 	alias cll='clear && l'
-	alias del='rm -Rf'
+	alias del='rm -Rfi'
 	alias tkill='tmux kill-session -t'
 	alias zup='upgrade_oh_my_zsh'
 
@@ -17,10 +17,9 @@
 	alias profile='subl ~/.zshrc'
 	alias editssh='subl ~/.ssh/known_hosts' # EDIT SSH HOSTS
 	alias cpssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"' # COPY SSH PUBLIC KEY
-	alias ping='ping -c' # PING WITH PACKET COUNT
+	alias ping='ping -c 5' # PING WITH PACKET COUNT
 
 	alias sites='~/Sites && l'
-	alias dploy='~/Projects/ && l'
 	alias st3='cd ~/Dropbox\ \(Personal\)/Apps/SublimeText/sublime-text-settings' # SAVING MY ENTIRE SUBLIME SETUP
 	alias hostfile='subl /Volumes/rdm/private/etc/hosts' # HOST FILE MODS
     alias vhostifle='vim /Volumes/rdm/private/etc/hosts' # OPEN HOST FILE IN VIM
