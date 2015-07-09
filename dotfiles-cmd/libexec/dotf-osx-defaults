@@ -27,6 +27,9 @@ sudo scutil --set HostName "MacDaddy"
 sudo scutil --set LocalHostName "MacDaddy"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MacDaddy"
 
+# Store Identities in Keychain
+sudo ssh-add -K
+
 # Menu bar: disable transparency
 # defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
