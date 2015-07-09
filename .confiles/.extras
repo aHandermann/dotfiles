@@ -1,2 +1,4 @@
+# JUMP TO ANY PROJECT FROM ANYWHERE IN THE TERMINAL
 go() { cd ~/Sites/$1; }
     _go() { _files -W ~/Sites -/; }
+    # compdef _go go
