@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------
 	alias cl='clear'
 	alias cll='clear && l'
-	alias del='rm -Rfi'
+	alias del='rm -Rf'
 	alias tkill='tmux kill-session -t'
 	alias zup='upgrade_oh_my_zsh'
 
