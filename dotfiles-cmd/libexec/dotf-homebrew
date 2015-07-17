@@ -88,9 +88,9 @@ system('brew install rename')
 system('brew install tree')
 system('brew install webkit2png')
 
-puts "Install ssh-copy-id & tmux"
+puts "Install ssh-copy-id"
 system('brew install ssh-copy-id')
-system('brew install tmux')
+#system('brew install tmux')
 
 puts "Installing unzip p7zip"
 system('brew install unzip')
