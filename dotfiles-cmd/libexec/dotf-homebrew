@@ -77,6 +77,7 @@ puts "Install tig"
 system('brew install git')
 system('brew install git-flow-avh')
 system('brew install tig')
+system('brew install fontconfig')
 
 puts "Installing some CTF tools & exiv2"
 system('brew install imagemagick --with-webp')
