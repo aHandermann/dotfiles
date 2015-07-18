@@ -4,7 +4,6 @@
 	alias cl='clear'
 	alias cll='clear && l'
 	alias del='rm -Rf'
-	alias tkill='tmux kill-session -t'
 	alias zup='upgrade_oh_my_zsh'
 
 	alias dropbox='cd ~/Dropbox\ \(Rainy\ Day\ Media\)' # DROPBOX FOR BUSINESS
@@ -46,7 +45,11 @@
 
 export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 
-
+# -------------------------------------------------------------------
+# Tmux aliases
+# -------------------------------------------------------------------
+alias tkill='tmux kill-session -t'
+alias imux='tmux -CC attach -t'
 # -------------------------------------------------------------------
 # HomeBrew aliases
 # -------------------------------------------------------------------
