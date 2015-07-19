@@ -17,7 +17,7 @@ function prompt_char {
     git branch >/dev/null 2>/dev/null && echo "$GIT_PROMPT_SYMBOL" && return
     hg root >/dev/null 2>/dev/null && echo "$MER_PROMPT_SYMBOL" && return
     svn info >/dev/null 2>/dev/null && echo "$SVN_PROMPT_SYMBOL" && return
-    echo '◇'%{$reset_color%}
+    echo '♦'%{$reset_color%}
 }
 
 function box_name {
@@ -35,18 +35,18 @@ autoload -U colors && colors # Enable colors in prompt
 MER_PROMPT_SYMBOL="%{$FG[177]%}☿"
 SVN_PROMPT_SYMBOL="%{$FG[170]%}∮"
 GIT_PROMPT_SYMBOL="%{$FG[162]%}±"
-GIT_PROMPT_PREFIX="%{$FG[239]%} %{$reset_color%}"
-GIT_PROMPT_SUFFIX="%{$FG[239]%} %{$eset_color%}"
-GIT_PROMPT_AHEAD="%{$FG[003]%}⬆%{$reset_color%} "
-GIT_PROMPT_BEHIND="%{$FG[003]%}⬇%{$reset_color%} "
-GIT_PROMPT_MERGING="%{$fg_bold[magenta]%}⚡︎%{$reset_color%}"
-GIT_PROMPT_UNTRACKED="%{$FG[003]%}✭ "
-GIT_PROMPT_MODIFIED="%{$FG[014]%}▲ "
-GIT_PROMPT_ADDED="%{$FG[002]%}✚%{$reset_color%} "
+GIT_PROMPT_PREFIX="%{$fg[black]%} %{$reset_color%}"
+GIT_PROMPT_SUFFIX="%{$fg[black]%} %{$reset_color%}"
+GIT_PROMPT_AHEAD="%{$fg[yellow]%}%{$reset_color%} " #push
+GIT_PROMPT_BEHIND="%{$fg[yellow]%}%{$reset_color%} " #pull
+GIT_PROMPT_MERGING="%{$fg_bold[magenta]%}%{$reset_color%}"
+GIT_PROMPT_UNTRACKED="%{$fg[white]%} "
+GIT_PROMPT_MODIFIED="%{$fg[cyan]%} "
+GIT_PROMPT_ADDED="%{$fg[green]%}%{$reset_color%} "
 
 # Git prompt configuration
-GIT_PROMPT_DIRTY="%{$FG[160]%} ✘✘✘"
-GIT_PROMPT_CLEAN="%{$FG[040]%} ✔"
+GIT_PROMPT_DIRTY="%{$fg[red]%} "
+GIT_PROMPT_CLEAN="%{$fg[green]%} "
 
 # Show Git branch/tag, or name-rev if on detached head
 function parse_git_branch() {
@@ -104,7 +104,7 @@ git_dirty() {
 # If inside a Git repository, print its branch and state
 function git_prompt_string() {
   local git_where="$(parse_git_branch)"
-  [ -n "$git_where" ] && echo "%{$FG[239]%}\ue0a0 %{$fg[white]%}${git_where#(refs/heads/|tags/)}$(git_dirty)$(parse_git_state)"
+  [ -n "$git_where" ] && echo "%{$FG[008]%} %{$fg[white]%}${git_where#(refs/heads/|tags/)}$(git_dirty)$(parse_git_state)"
 }
 
 # RVM Stuff
@@ -115,8 +115,8 @@ function current_pwd {
 }
 
 PROMPT='
-%{$FG[239]%}╭─ %{$FG[033]%}$(current_pwd)%{$reset_color%} $(git_prompt_string)%{$reset_color%}
-%{$FG[239]%}╰─$(prompt_char)%{$reset_color%} '
+%{$FG[008]%}╭ ━  %{$fg[blue]%}$(current_pwd)%{$reset_color%} $(git_prompt_string)%{$reset_color%}
+%{$FG[008]%}╰ ━$(prompt_char)%{$reset_color%} '
 
 # RPROMPT=%{$fg[yellow]%}rvm:%{$reset_color%}%{$FG[239]%}%{$fg[red]%}${rvm_ruby}
 
