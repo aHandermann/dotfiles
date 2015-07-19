@@ -40,7 +40,7 @@ GIT_PROMPT_SUFFIX="%{$fg[black]%} %{$reset_color%}"
 GIT_PROMPT_AHEAD="%{$fg[yellow]%}%{$reset_color%} " #push
 GIT_PROMPT_BEHIND="%{$fg[yellow]%}%{$reset_color%} " #pull
 GIT_PROMPT_MERGING="%{$fg_bold[magenta]%}%{$reset_color%}"
-GIT_PROMPT_UNTRACKED="%{$fg[white]%} "
+GIT_PROMPT_UNTRACKED="%{$fg[yellow]%} "
 GIT_PROMPT_MODIFIED="%{$fg[cyan]%} "
 GIT_PROMPT_ADDED="%{$fg[green]%}%{$reset_color%} "
 
