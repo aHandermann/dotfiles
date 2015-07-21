@@ -87,6 +87,7 @@ system('brew install sqlmap')
 system('brew install rename')
 system('brew install tree')
 system('brew install webkit2png')
+system('brew install speedtest-cli')
 
 puts "Install ssh-copy-id & tmux"
 system('brew install ssh-copy-id')
