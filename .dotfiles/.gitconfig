@@ -101,10 +101,11 @@
   cma = commit -am
   # pushes & pulls
   f = fetch --prune
+  p = push
   ps = push
   pl = pull
-  pr = pull-request
-  pf = push --force
+  plr = pull-request
+  psf = push --force
   # status & log
   s = status -s
   ss = status
