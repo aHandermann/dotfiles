@@ -71,7 +71,7 @@ function wpinstall(){
 	unzip latest.zip;
 	mv wordpress/* .;
 	rm -rf wordpress latest.zip readme.html license.txt xmlrpc.php;
-	mv wp-config-sample.php wp-config.php;
+	mv wp-config{-sample,}.php;
 
 	echo -e "$fg_bold[blue]---------------------------------------------------------------------------------"
 	echo -e "$fg_bold[blue] DATABASE$reset_color $fg_bold[yellow]"$@"$rest_color $fg_bold[blue]CREATED"
