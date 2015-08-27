@@ -150,7 +150,7 @@ function flush() {
 
 # -------------------------------------------------------------------
 # compressed file expander
-# (from https://github.com/myfreeweb/zshuery/blob/master/zshuery.sh)
+# (from https://github.com/myfreeweb/zshuery)
 # -------------------------------------------------------------------
 ex() {
     if [[ -f $1 ]]; then
@@ -194,7 +194,7 @@ any() {
 # -------------------------------------------------------------------
 # display a neatly formatted path
 # -------------------------------------------------------------------
-path() {
+mypath() {
   echo $PATH | tr ":" "\n" | \
     awk "{ sub(\"/usr\",   \"$fg_no_bold[green]/u); \
            sub(\"/bin\",   \"$fg_no_bold_bold[blue]/b); \
