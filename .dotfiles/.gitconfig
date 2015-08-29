@@ -73,6 +73,7 @@
   bm = branch -m
   d = diff
   dt = difftool
+  m = merge
   mt = mergetool
   r = rebase
   re = remote
