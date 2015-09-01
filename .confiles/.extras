@@ -1,4 +1,51 @@
-# JUMP TO ANY PROJECT FROM ANYWHERE IN THE TERMINAL
-go() { cd ~/Sites/$1; }
-    _go() { _files -W ~/Sites -/; }
-    # compdef _go go
+# -------------------------------------------------------------------
+# Wordpress
+# -------------------------------------------------------------------
+function wpinstall(){
+
+	echo -e "$fg_bold[yellow]---------------------------------------------------------------------------------"
+	echo -e "$fg_bold[yellow] Creating the Project"
+	echo -e "$fg_bold[yellow]---------------------------------------------------------------------------------$reset_color"
+
+	mkdir -p ~/Sites/"$@" && cd ~/Sites/"$@"
+
+	echo -e "$fg_bold[yellow]---------------------------------------------------------------------------------"
+	echo -e "$fg_bold[yellow] Downloading WordPress from the cloud"
+	echo -e "$fg_bold[yellow]---------------------------------------------------------------------------------$reset_color"
+
+	wget --show-progress http://wordpress.org/latest.zip .;
+
+	echo -e "$fg_bold[yellow]---------------------------------------------------------------------------------"
+	echo -e "$fg_bold[yellow] Setting up the Project!"
+	echo -e "$fg_bold[yellow]---------------------------------------------------------------------------------$reset_color"
+
+	unzip latest.zip;
+	mv wordpress/* .;
+	rm -rf wordpress latest.zip readme.html license.txt xmlrpc.php;
+	mv wp-config{-sample,}.php;
+
+	echo -e "$fg_bold[blue]---------------------------------------------------------------------------------"
+	echo -e "$fg_bold[blue] DATABASE$reset_color $fg_bold[yellow]"$@"$rest_color $fg_bold[blue]CREATED"
+	echo -e "$fg_bold[blue]---------------------------------------------------------------------------------$reset_color"
+
+	mysqladmin -uroot -proot CREATE "$@";
+
+	echo -e "$fg_bold[blue]---------------------------------------------------------------------------------"
+	echo -e "$fg_bold[blue] SETTING UP THE $reset_color $fg_bold[yellow]"$@"$rest_color $fg_bold[blue]WPCONFIG"
+	echo -e "$fg_bold[blue]---------------------------------------------------------------------------------$reset_color"
+
+	sed -i "" "s/database_name_here/$@/g; s/username_here/root/g; s/password_here/root/g; s/wp_/rdm_/g wp-config.php"  wp-config.php;
+	echo -e "$fg_bold[red]---------------------------------------------------------------------------------"
+	echo -e "$fg_bold[red] Salts Copied to Clipboard! You know if you want them"
+	echo -e "$fg_bold[red]---------------------------------------------------------------------------------$reset_color"
+
+	SALT=$(curl -L https://api.wordpress.org/secret-key/1.1/salt/)
+	STRING='put your unique phrase here'
+	printf '%s\n' "g/$STRING/d" a "$SALT" . w | ed -s wp-config.php
+
+	echo -e "$fg_bold[red]---------------------------------------------------------------------------------"
+	echo -e "$fg_bold[red] Happy hacking!"
+	echo -e "$fg_bold[red]---------------------------------------------------------------------------------$reset_color"
+
+	/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -b . && open . && subl wp-config.php;
+}
