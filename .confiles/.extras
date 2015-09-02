@@ -41,11 +41,15 @@ function wpinstall(){
 
 	SALT=$(curl -L https://api.wordpress.org/secret-key/1.1/salt/)
 	STRING='put your unique phrase here'
-	printf '%s\n' "g/$STRING/d" a "$SALT" . w | ed -s wp-config.php
+	printf '%s\n' "g/$STRING/d" a "$SALT" . w | ed -s wp-config.php;
+
+	git init;
 
 	echo -e "$fg_bold[red]---------------------------------------------------------------------------------"
 	echo -e "$fg_bold[red] Happy hacking!"
 	echo -e "$fg_bold[red]---------------------------------------------------------------------------------$reset_color"
 
 	/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -b . && open . && subl wp-config.php;
+
+
 }
