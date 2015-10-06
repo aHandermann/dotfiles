@@ -115,8 +115,8 @@ function current_pwd {
 }
 
 PROMPT='
-%{$FG[008]%}╭ ━  %{$fg[blue]%}$(current_pwd)%{$reset_color%} $(git_prompt_string)%{$reset_color%}
-%{$FG[008]%}╰ ━$(prompt_char)%{$reset_color%} '
+%{$FG[008]%}╭─  %{$fg[blue]%}$(current_pwd)%{$reset_color%} $(git_prompt_string)%{$reset_color%}
+%{$FG[008]%}╰─$(prompt_char)%{$reset_color%} '
 
 # RPROMPT=%{$fg[yellow]%}rvm:%{$reset_color%}%{$FG[239]%}%{$fg[red]%}${rvm_ruby}
 
