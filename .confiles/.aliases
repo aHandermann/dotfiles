@@ -3,13 +3,15 @@
 # -------------------------------------------------------------------
 	alias cl='clear'
 	alias cll='clear && l'
-	alias del='rm -Rf'
+	alias del='rm -rfv'
 	alias zup='upgrade_oh_my_zsh'
+	alias g='git'
+	alias o='open'
 
 	alias dropbox='cd ~/Dropbox\ \(Rainy\ Day\ Media\)' # DROPBOX FOR BUSINESS
 	alias dropboxp='cd ~/Dropbox\ \(Personal\)' # PERSONAL DROPBOX
 	alias gdrive='cd ~/Google\ Drive' # GOOGLE DRIVE
-	alias clients='cd ~/Google\ Drive/Opportunities/Clients' # CLIENTS IN GOOGLE DRIVE
+	alias clients='cd ~/Dropbox\ \(Rainy\ Day\ Media\)/Clients\ Projects' # CLIENTS IN GOOGLE DRIVE
 
 	alias mypath='subl ~/Projects/shell/dotfiles/.confiles/.path'
 	alias expath='subl ~/Projects/shell/dotfiles/.confiles/.exports'
@@ -24,6 +26,7 @@
     alias vhostifle='vim /Volumes/rdm/private/etc/hosts' # OPEN HOST FILE IN VIM
 	#alias lamp="curl -L -o 'install.sh' http://bit.ly/1hBfq57 && curl -L -o 'Vagrantfile' http://bit.ly/1mE3Qt9 && vagrant up" # VAGRANT SHORT CUT TO INSTALL A LAMP STACK
 	alias speedtest='speedtest-cli'
+
 # FORKED REPOS AND OTHER PROJECTS
 	alias repos='~/Projects && l'
     alias p='~/Projects && l'
@@ -46,20 +49,22 @@
 export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
 
 # -------------------------------------------------------------------
-# Tmux aliases
+# Tmux
 # -------------------------------------------------------------------
 alias tkill='tmux kill-session -t'
 alias imux='tmux -CC attach -t'
+
 # -------------------------------------------------------------------
-# HomeBrew aliases
+# HomeBrew
 # -------------------------------------------------------------------
 
 	alias brews='brew list -1'
 	alias bubu="brew update && brew upgrade && brew cleanup"
 
 # -------------------------------------------------------------------
-# Git aliases Most used in my current worflow
+# Git - gMost used in my current worflow
 # -------------------------------------------------------------------
+ 	alias g='git'
 	alias gcuts='git config --get-regexp alias'
 	alias grr='git remote rm'
 	alias grv='git remote -v' # List the current remotes
@@ -76,24 +81,44 @@ alias imux='tmux -CC attach -t'
 	alias gu="git shortlog | grep -E '^[^ ]'"
 
 # -------------------------------------------------------------------
-# Capistrano aliases
+# Capistrano
 # -------------------------------------------------------------------
 	alias capd='cap deploy'
 
 # -------------------------------------------------------------------
-# Laravel aliases
+# Laravel
 # -------------------------------------------------------------------
 # alias laravel='composer create-project laravel/laravel' # Not sure I need this that often -- commented out for reference
 
 # -------------------------------------------------------------------
-# PHP aliases
+# PHP
 # -------------------------------------------------------------------
 	alias phps='php -S 0.0.0.0:8888' #  phps public/index.php to start the built-in web server
 
 # -------------------------------------------------------------------
-# Ruby aliases
+# Ruby
 # -------------------------------------------------------------------
 	alias gems='gem query --local'
+
+	alias be='bundle exec'
+	alias bi='bundle install'
+	alias bo='bundle outdated'
+	alias bup='bundle update'
+
+# -------------------------------------------------------------------
+# Rudy on Rails
+# -------------------------------------------------------------------
+	alias rs='bundle exec rails server'
+	alias rc='bundle exec rails console'
+	alias rx='bundle exec rails runner "Rails.cache.clear" && powder restart'
+
+# -------------------------------------------------------------------
+# Middleman / Jekyll
+# -------------------------------------------------------------------
+	alias mmb='bundle exec middleman build'
+	alias mmd='bundle exec middleman deploy'
+	alias mms='bundle exec middleman server'
+	alias mmi='middleman init'
 
 # -------------------------------------------------------------------
 # Postgre SQL
@@ -102,7 +127,7 @@ alias imux='tmux -CC attach -t'
 	alias pgoff='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 # -------------------------------------------------------------------
-# MySQL aliases
+# MySQL
 # -------------------------------------------------------------------
 	alias myon='mysql.server start'
 	alias myoff='mysql.server stop'
@@ -112,13 +137,13 @@ alias imux='tmux -CC attach -t'
 	alias dblogin='mysql -u root -p'
 
 # -------------------------------------------------------------------
-# dnsmasq aliases
+# DNSMASQ
 # -------------------------------------------------------------------
 	alias startdnsmasq='sudo launchctl start homebrew.mxcl.dnsmasq'
 	alias stopdnsmasq='sudo launchctl stop homebrew.mxcl.dnsmasq'
 
 # -------------------------------------------------------------------
-# Vagrant aliases
+# Vagrant
 # -------------------------------------------------------------------
 	#alias vms='~/Projects/vms && l'
 	alias vup='vagrant up'  #start server
@@ -133,7 +158,7 @@ alias imux='tmux -CC attach -t'
 	alias vpro='vagrant provision' #rebuilds the config.
 
 # -------------------------------------------------------------------
-# Apache aliases
+# Apache
 # -------------------------------------------------------------------
 	alias starta='apachectl -k start'
 	alias stopa='apachectl -k stop'
@@ -145,7 +170,6 @@ alias imux='tmux -CC attach -t'
 # Network Stuff
 # -------------------------------------------------------------------
 	alias whois='whois -h whois-servers.net' # Enhanced WHOIS looku ps
-
 	alias flushdns='dscacheutil -flushcache | sudo killall -HUP mDNSResponder' # Flush Directory Service cache
 
 
