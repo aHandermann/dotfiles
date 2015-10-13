@@ -119,6 +119,7 @@ alias imux='tmux -CC attach -t'
 	alias mmd='bundle exec middleman deploy'
 	alias mms='bundle exec middleman server'
 	alias mmi='middleman init'
+	alias mm='middleman'
 
 # -------------------------------------------------------------------
 # Postgre SQL
