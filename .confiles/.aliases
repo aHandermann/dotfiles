@@ -115,11 +115,11 @@ alias imux='tmux -CC attach -t'
 # -------------------------------------------------------------------
 # Middleman / Jekyll
 # -------------------------------------------------------------------
+	alias mm='middleman'
 	alias mmb='bundle exec middleman build'
 	alias mmd='bundle exec middleman deploy'
 	alias mms='bundle exec middleman server'
-	alias mmi='middleman init'
-	alias mm='middleman'
+
 
 # -------------------------------------------------------------------
 # Postgre SQL
