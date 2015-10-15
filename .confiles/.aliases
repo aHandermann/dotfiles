@@ -6,7 +6,6 @@
 	alias del='rm -rfv'
 	alias zup='upgrade_oh_my_zsh'
 	alias g='git'
-	alias o='open'
 
 	alias dropbox='cd ~/Dropbox\ \(Rainy\ Day\ Media\)' # DROPBOX FOR BUSINESS
 	alias dropboxp='cd ~/Dropbox\ \(Personal\)' # PERSONAL DROPBOX
