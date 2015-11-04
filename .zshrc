@@ -1,7 +1,7 @@
 # OH-MY-ZSH SETUP
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="the_poncho"
+ZSH_THEME="rain_coat"
 
 export UPDATE_ZSH_DAYS=13
 
@@ -13,8 +13,6 @@ COMPLETION_WAITING_DOTS="true"
 # plugins=(brew bundle colorize fasd gem node npm vagrant battery)
 
 plugins=(battery sublime colorize fasd z osx ssh-agent) # FOR JUST A LITTLE WHILE
-
-RPROMPT='$(battery_pct_prompt)%{$reset_color%}'
 
 # register homebrew completions folder
 
@@ -35,3 +33,9 @@ zstyle :omz:plugins:ssh-agent agent-forwarding on
 
 # added by travis gem
 [ -f /Users/ed/.travis/travis.sh ] && source /Users/ed/.travis/travis.sh
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/ed/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/ed/google-cloud-sdk/completion.zsh.inc'
