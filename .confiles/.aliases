@@ -7,42 +7,38 @@
 	alias zup='upgrade_oh_my_zsh'
 	alias g='git'
 
-	alias dropbox='cd ~/Dropbox\ \(Rainy\ Day\ Media\)' # DROPBOX FOR BUSINESS
-	alias dropboxp='cd ~/Dropbox\ \(Personal\)' # PERSONAL DROPBOX
 	alias gdrive='cd ~/Google\ Drive' # GOOGLE DRIVE
-	alias clients='cd ~/Dropbox\ \(Rainy\ Day\ Media\)/Clients\ Projects' # CLIENTS IN GOOGLE DRIVE
 
-	alias mypath='subl ~/Projects/shell/dotfiles/.confiles/.path'
-	alias expath='subl ~/Projects/shell/dotfiles/.confiles/.exports'
+	alias mypath='subl ~/Sites/shell/dotfiles/.confiles/.path'
+	alias expath='subl ~/Sites/shell/dotfiles/.confiles/.exports'
 	alias profile='subl ~/.zshrc'
 	alias editssh='subl ~/.ssh/known_hosts' # EDIT SSH HOSTS
 	alias cpssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"' # COPY SSH PUBLIC KEY
 	alias ping='ping -c 5' # PING WITH PACKET COUNT
 
 	alias sites='~/Sites && l'
-	alias st3='cd ~/Dropbox\ \(Personal\)/Apps/SublimeText/sublime-text-settings' # SAVING MY ENTIRE SUBLIME SETUP
-	alias hostfile='subl /Volumes/rdm/private/etc/hosts' # HOST FILE MODS
-    alias vhostifle='vim /Volumes/rdm/private/etc/hosts' # OPEN HOST FILE IN VIM
+	#alias hostfile='subl /Volumes/rdm/private/etc/hosts' # HOST FILE MODS
+    #alias vhostifle='vim /Volumes/rdm/private/etc/hosts' # OPEN HOST FILE IN VIM
 	#alias lamp="curl -L -o 'install.sh' http://bit.ly/1hBfq57 && curl -L -o 'Vagrantfile' http://bit.ly/1mE3Qt9 && vagrant up" # VAGRANT SHORT CUT TO INSTALL A LAMP STACK
 	alias speedtest='speedtest-cli'
 
 # FORKED REPOS AND OTHER PROJECTS
-	alias repos='~/Projects && l'
-    alias p='~/Projects && l'
-	alias labs='~/Projects/labs && l'
-	alias cssf='~/Projects/static/cssFW && l'
+	# alias repos='~/Projects && l'
+ #    alias p='~/Projects && l'
+	# alias labs='~/Projects/labs && l'
+	# alias cssf='~/Projects/static/cssFW && l'
 
 # VENTURES
-	alias static='~/Projects/static && l' # THEME MARKET STUFF
-	alias wps='~/Projects/wordpress && l'
-	alias wpt='~/Projects/wordpress/themes && l' # THEME MARKET STUFF
-	alias wpp='~/Projects/wordpress/plugins && l'
+	#alias static='~/Projects/static && l' # THEME MARKET STUFF
+	#alias wps='~/Projects/wordpress && l'
+	#alias wpt='~/Projects/wordpress/themes && l' # THEME MARKET STUFF
+	#alias wpp='~/Projects/wordpress/plugins && l'
 
 # RDM BUILDs
-	alias myz='~/Projects/shell/omz/oh-my-zsh-rdm-theme && l && subl .'  # OPEN REPO IN SUBLIME TEXT
-	alias rdms='~/Projects/rainydaymedia/RDMShell && l'
-	alias rdmg='~/Projects/rainydaymedia/rdmgumbyshell/ && l'
-	alias cuts='~/Projects/shell/dotfiles' # NAVITGATE TO DOTFILES
+	#alias myz='~/Projects/shell/omz/oh-my-zsh-rdm-theme && l && subl .'  # OPEN REPO IN SUBLIME TEXT
+	#alias rdms='~/Projects/rainydaymedia/RDMShell && l'
+	#alias rdmg='~/Projects/rainydaymedia/rdmgumbyshell/ && l'
+	alias cuts='~/Sites/shell/dotfiles' # NAVITGATE TO DOTFILES
 	#alias handbook='~/Sites/handbook/ && l' # OPEN RDM HANDBOOK
 
 export EDITOR='subl -n' # EDIT WITH SUBLIME TEXT WITH NEW WINDOW
