@@ -14,7 +14,6 @@
 	alias profile='subl ~/.zshrc'
 	alias editssh='subl ~/.ssh/known_hosts' # EDIT SSH HOSTS
 	alias cpssh='pbcopy < ~/.ssh/id_rsa.pub && echo "SSH Key copied to clipboard"' # COPY SSH PUBLIC KEY
-	alias ping='ping -c 5' # PING WITH PACKET COUNT
 
 	alias sites='~/Sites && l'
 	#alias hostfile='subl /Volumes/rdm/private/etc/hosts' # HOST FILE MODS
