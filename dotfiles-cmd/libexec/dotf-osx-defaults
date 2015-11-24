@@ -57,7 +57,7 @@ defaults write com.apple.systemuiserver menuExtras -array \
 	"/System/Library/CoreServices/Menu Extras/Clock.menu"
 
 #Set highlight color to purple
-defaults write NSGlobalDomain AppleHighlightColor -string "0.0392568627451 0.72941176470588 0.70980392156863"
+defaults write NSGlobalDomain AppleHighlightColor -string "0.04705882352941 0.37254901960784 0.36470588235294"
 
 # Set sidebar icon size to medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
