@@ -278,7 +278,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutio
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
-defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
 # Finder: show hidden files by default
 defaults write com.apple.finder AppleShowAllFiles -bool false
@@ -370,7 +370,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 ###############################################################################
 
 # Enable highlight hover effect for the grid view of a stack (Dock)
-defaults write com.apple.dock mouse-over-hilte-stack -bool true
+defaults write com.apple.dock mouse-over-hilte-stack -bool false
 
 # Set the icon size of Dock items to 36 pixels
 defaults write com.apple.dock tilesize -int 32
@@ -409,7 +409,7 @@ defaults write com.apple.dock autohide-time-modifier -int 0
 #defaults write com.apple.dock no-glass -bool true
 
 # Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide -bool false
 
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
